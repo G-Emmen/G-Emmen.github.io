@@ -27,15 +27,17 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
+# Build settings
+
+theme: minima
+
+plugins:
+  - jekyll-feed
+
 minima:
   social_links:
     - { platform: github, user_url: "https://github.com/GregulasMaximus" }
     - { platform: linkedin, user_url: "https://www.linkedin.com/in/gregemmen/" }
-
-# Build settings
-theme: minima
-plugins:
-  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -58,6 +60,6 @@ plugins:
 #   - vendor/ruby/
 
 # Customizing navigation links
-header_pages:
-  - about.md
-  - portfolio.md
+# header_pages:
+#  - about.md
+#  - portfolio.md
