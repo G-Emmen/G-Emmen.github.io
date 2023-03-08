@@ -58,5 +58,5 @@ header_pages:
 
 minima:
   social_links:
-    - { platform: github, user_url: "https://github.com/GregulasMaximus" }
+    - { platform: github, user_url: "https://github.com/G-Emmen" }
     - { platform: linkedin, user_url: "https://www.linkedin.com/in/gregemmen/" }
