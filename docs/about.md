@@ -4,11 +4,6 @@ title: About
 ---
 
 # I'm Greg.
-![](https://github.com/G-Emmen/G-Emmen.github.io/blob/main/docs/assets/img/ResizedProfilePic.jpg?raw=true)
-
-_Engineer by trade_ <br>
-_3D printing enthusiast_ <br>
-_Board game developer and enjoyer_ <br>
 
 In 2015, I graduated from Colorado State University with a BS in Mechanical Engineering. By my senior year, I had a focus in controls development; specifically supporting the EcoCAR3 competition as part of the first year software & controls team. With this background in automotive and controls development I moved to Michigan and started working on electrification projects with General Motors. 
 
