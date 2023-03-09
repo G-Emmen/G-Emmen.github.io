@@ -7,7 +7,7 @@ permalink: /about/
 # I'm Greg.
 ![](https://github.com/G-Emmen/G-Emmen.github.io/blob/main/docs/assets/img/ProfilePic.jpg.jpg?raw=true)
 
-<p>_Engineer by trade_ <br>
+_Engineer by trade_ <br>
 _3D printing enthusiast_ <br>
 _Board game developer and enjoyer_ </p>
 
