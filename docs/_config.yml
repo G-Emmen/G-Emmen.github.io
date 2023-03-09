@@ -10,8 +10,8 @@ relative_permalinks: true
 title:            Greg Emmen
 tagline:          'Software & Controls Engineer'
 description:      'Passionately '
-url:              
-baseurl:          /
+url:              ""
+baseurl:          ""
 
 author:
   name:           'Greg Emmen'
@@ -24,3 +24,7 @@ version:          2.1.0
 
 github:
   repo:           https://github.com/G-Emmen
+
+header_pages:
+  - portfolio.md
+  - about.md
