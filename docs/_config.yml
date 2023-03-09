@@ -1,7 +1,5 @@
 title: Greg Emmen
-author:
-  name: Greg Emmen
-  email: greg.emmen@gmail.com
+email: greg.emmen@gmail.com
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
