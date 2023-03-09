@@ -7,22 +7,14 @@ permalink:        pretty
 
 # Setup
 title:            Greg Emmen
-tagline:          'Software & Controls Engineer'
-description:      'Passionately '
+description:      'Software & Controls Engineer. 3D printing enthusiast. Boardgame developer. Working to make the world a better place'
 url:              ""
 baseurl:          ""
 
 author:
   name:           'Greg Emmen'
-  url:            https://twitter.com/GregulasMaximus
 
 paginate:         5
-
-# Custom vars
-version:          2.1.0
-
-github:
-  repo:           https://github.com/G-Emmen
 
 header_pages:
   - portfolio.md
