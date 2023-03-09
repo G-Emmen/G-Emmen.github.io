@@ -3,7 +3,11 @@ layout: page
 title: About
 ---
 
-## Hello. I'm Greg.
+#### Hello. I'm Greg.
+
+_Software & Controls Engineer._
+_3D printing enthusiast._
+_Boardgame developer._ 
 
 In 2015, I graduated from Colorado State University with a BS in Mechanical Engineering. By my senior year, I had a focus in controls development; specifically supporting the EcoCAR3 competition as part of the first year software & controls team. With this background in automotive and controls development I moved to Michigan and started working on electrification projects with General Motors. 
 
