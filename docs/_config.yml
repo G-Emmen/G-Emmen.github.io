@@ -2,8 +2,8 @@ title: Greg Emmen
 author: Greg Emmen
 url: "" # root address of the site
 description: > # description of the site (multiple lines allowed)
-  Software & Controls engineer.
-  3D printing enthusiast.
+  Software & Controls engineer. \n
+  3D printing enthusiast. \n
   Board game developer & enjoyer.
 
 permalink: /:slug
