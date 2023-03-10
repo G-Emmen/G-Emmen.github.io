@@ -13,9 +13,9 @@ project_entries:
     url: satellite-attitude-control-post
     desc: Introduction of an attitude control system to a simplified satellite model in MATLAB Simulink
 
-  - title: Regenerative Braking Method
+  - title: Regenerative Braking Control Method
     url: regenerative-braking-post
-    desc: Analysis of six-switch inverter control strategy for regenerative braking
+    desc: Energy analysis of six-switch inverter control strategy for regenerative braking modeled in MATLAB Simulink
 
 personal_project_entries:
   - title: Robopocalypse
