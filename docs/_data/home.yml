@@ -6,10 +6,6 @@ navbar_entries:
     url: blog
 
 project_entries:
-  - title: EcoCAR3
-    url: EcoCAR3-post
-    desc: Senior design project for undergraduate degree at CSU
-
   - title: Satellite Attitude Control
     url: satellite-attitude-control-post
     desc: Introducing an attitude control system to a simplified satellite model
