@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Greg Emmen
-tags: [projects]
+tags: [personal projects]
 ---
 
-Satellite Attitude Control
+Robopocalypse
