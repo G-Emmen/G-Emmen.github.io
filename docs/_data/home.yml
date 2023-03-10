@@ -1,14 +1,14 @@
 navbar_entries:
-  - title: resume
-    url: resume
-
   - title: about
     url: about
+
+#  - title: blog
+#    url: blog
 
 project_entries:
   - title: Satellite Attitude Control
     url: satellite-attitude-control-post
-    desc: Introducing an attitude control system to a simplified satellite model
+    desc: Introduction of an attitude control system to a simplified satellite model in MATLAB Simulink
 
   - title: Regenerative Braking Method
     url: regenerative-braking-post
