@@ -9,18 +9,22 @@ navbar_entries:
 #    url: blog
 
 project_entries:
-  - title: Satellite Attitude Control
-    url: satellite-attitude-control-post
-    desc: Explored the implementation of an attitude control system to a simplified satellite model in MATLAB Simulink
-
   - title: Regenerative Braking Control Method
     url: regenerative-braking-post
-    desc: Energy analysis of six-switch inverter control strategy for regenerative braking modeled in MATLAB Simulink
+    desc: Energy analysis of six-switch inverter control strategy for regenerative braking modeled in MATLAB Simulink.
+
+  - title: Satellite Attitude Control System
+    url: satellite-attitude-control-post
+    desc: Explored the implementation of an attitude control system to a simplified satellite model in MATLAB Simulink.
+
+  - title: CSU EcoCAR3 - Y1 Controls Team
+    url: EcoCAR3-post
+    desc: Undergraduate capstone project at Colorado State University. Developed initial supervisory control system for a hybrid Chevrolet Camaro.
 
 personal_project_entries:
   - title: Robopocalypse
     url: robopocalypse
-    desc: Card based board game with a focus on collecting robots and preventing others from doing the same
+    desc: Card based board game with a focus on collecting robots and preventing others from doing the same.
     highlight: WIP
 
 footer_entries:
