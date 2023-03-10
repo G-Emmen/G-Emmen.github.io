@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Contact
+title: Contact Information
 ---
 
-Contact - Under Construction
+Here are some good ways to reach out and connect.
