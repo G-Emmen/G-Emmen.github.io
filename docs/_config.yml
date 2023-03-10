@@ -41,6 +41,12 @@ theme_config:
     #title_misc_list: Details
     title_blog: Blog
     #title_old_projects: Old Projects
+  email: greg.emmen@gmail.com
+  phone: (248)495-0680
+  timezone: Eastern
+  linkedin: gregemmen
+  github: G-Emmen
+  pdf: https://github.com/G-Emmen/G-Emmen.github.io/raw/main/docs/assets/pdf/Greg_Emmen_Resume.pdf
 
 # soopr:
 #   publish_token: "" # sign up at https://www.soopr.co to get your publish token and personalize share and reaction options
