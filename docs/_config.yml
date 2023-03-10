@@ -7,14 +7,13 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-# theme: minima
-remote_theme: pages-themes/minimal@v0.2.0
+theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
 
 github_username: G-Emmen
 linkedin_username: gregemmen
+twitter_username: GregulasMaximus
 
 # Theme-specific settings
 
