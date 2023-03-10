@@ -17,6 +17,12 @@ project_entries:
     url: regenerative-braking-post
     desc: Analysis of six-switch inverter control strategy for regenerative braking
 
+personal_project_entries:
+  - title: Robopocalypse
+    url: robopocalypse
+    desc: Card based board game with a focus on collecting robots and preventing others from doing the same
+    highlight: WIP
+
 footer_entries:
 
   - title: twitter
