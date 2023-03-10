@@ -1,9 +1,9 @@
 navbar_entries:
+  - title: resume
+    url: resume
+
   - title: about
     url: about
-
-  - title: blog
-    url: blog
 
 project_entries:
   - title: Satellite Attitude Control
