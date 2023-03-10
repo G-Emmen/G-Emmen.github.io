@@ -11,7 +11,7 @@ navbar_entries:
 project_entries:
   - title: Satellite Attitude Control
     url: satellite-attitude-control-post
-    desc: Introduction of an attitude control system to a simplified satellite model in MATLAB Simulink
+    desc: Explored the implementation of an attitude control system to a simplified satellite model in MATLAB Simulink
 
   - title: Regenerative Braking Control Method
     url: regenerative-braking-post
