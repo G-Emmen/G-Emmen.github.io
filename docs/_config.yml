@@ -1,10 +1,10 @@
 title: Greg Emmen
 author: Greg Emmen
 url: "" # root address of the site
-description: >+ # description of the site (multiple lines allowed)
-  Software & controls engineer.
-  3D printing enthusiast.
-  Board game developer & enjoyer.
+# description: >+ # description of the site (multiple lines allowed)
+#   Software & controls engineer.
+#   3D printing enthusiast.
+#   Board game developer & enjoyer.
 
 permalink: /:slug
 
@@ -22,7 +22,7 @@ theme_config:
   appearance_toggle: false # if appearance can be switched by user
   back_home_text: "home..." # customize text for homepage link in post layout
   date_format: "%Y-%m-%d" # customize how date is formatted
-  show_description: true # show blog description
+  #show_description: true # show blog description
   show_navbar: true # show horizontal navbar
   show_footer: true # show footer links in home page,add in _data/home.yml
   show_copyright: false # show copyright notice in footer
