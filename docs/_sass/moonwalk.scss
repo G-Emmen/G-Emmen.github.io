@@ -29,7 +29,24 @@ hr.page-break {
 
 p { margin: 1em 0; }
 
-li { margin: 0.4em 0; }
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li { 
+  margin-bottom: 10px;
+  display: flex;
+  padding-left: 0;
+  align-items: center;
+}
+
+li svg,
+li img {
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+}
 
 .w {
   max-width: 720px;
@@ -39,9 +56,11 @@ li { margin: 0.4em 0; }
 
 table {
   table-layout: auto;
+  table-width: 100%;
   border: none;
   border-collapse: collapse;
   padding: 0.4em;
+  padding-left: 0;
 }
 
 th, td {
@@ -65,8 +84,7 @@ blockquote {
 img {
   max-width: 100%;
   display: block;
-  margin: 0 auto;
-  border-radius: 10%;
+  border-radius: 5%;
 }
 html {
     --bg: #FFF;
@@ -217,26 +235,4 @@ p code, li code {
   font-weight: bold;
   text-transform: lowercase;
   //border: 1px solid var(--text-secondary);
-}
-
-.button-group {
-  display: flex;
-  justify-content: center;
-}
-
-.button {
-  display: inline-block;
-  padding: 0.5em;
-  border: 1px var(--text) solid;
-  width: 4em;
-  height: auto;
-  text-align: center;
-  font-size: 1em;
-  align-items: center;
-  background-color: var(--bg-secondary);
-  margin-bottom: 0.8em;
-  border-radius: 0.5em;
-  margin-left: 1em;
-  text-decoration: none;
-  font-weight: normal
 }
