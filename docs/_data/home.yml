@@ -1,12 +1,6 @@
 navbar_entries:
-  - title: Resume
-    url: https://github.com/G-Emmen/G-Emmen.github.io/raw/main/docs/assets/pdf/Greg_Emmen_Resume.pdf
-
   - title: About
     url: about
-
-  - title: Contact
-    url: contact
 
 #  - title: blog
 #    url: blog

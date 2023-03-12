@@ -37,11 +37,16 @@ li { margin: 0.4em 0; }
   padding: 4em 2em;
 }
 
-table, th, td {
+table {
+  table-layout: fixed;
   width: 100%;
-  border: thin solid black;
+  border: none;
   border-collapse: collapse;
   padding: 0.4em;
+}
+
+th, td {
+  width:50%
 }
 
 div.highlighter-rouge pre code, pre code.highlighter-rouge {
@@ -62,6 +67,7 @@ img {
   max-width: 100%;
   display: block;
   margin: 0 auto;
+  border-radius: 10%;
 }
 html {
     --bg: #FFF;
@@ -212,4 +218,26 @@ p code, li code {
   font-weight: bold;
   text-transform: lowercase;
   //border: 1px solid var(--text-secondary);
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5em;
+  border: 1px var(--text) solid;
+  width: 4em;
+  height: auto;
+  text-align: center;
+  font-size: 1em;
+  align-items: center;
+  background-color: var(--bg-secondary);
+  margin-bottom: 0.8em;
+  border-radius: 0.5em;
+  margin-left: 1em;
+  text-decoration: none;
+  font-weight: normal
 }
