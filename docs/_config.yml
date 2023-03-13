@@ -2,24 +2,17 @@ title: Greg Emmen
 author: Greg Emmen
 url: "" # root address of the site
 # description: >+ # description of the site (multiple lines allowed)
-#   Software & controls engineer.
-#   3D printing enthusiast.
-#   Board game developer & enjoyer.
 
 permalink: /:slug
 
 #favicon: "./logo.png" # relative path to site's favicon
-
-#twitter:
-#    username: abhinav # update or delete this
-#    card: summary_large_image
 
 #theme: moonwalk # if you are using GitHub Pages, change it to remote_theme: abhinavs/moonwalk
 remote_theme: abhinavs/moonwalk
 
 theme_config:
   appearance: "light" # can be "light", "dark" or "auto"
-  appearance_toggle: false # if appearance can be switched by user
+  appearance_toggle: true # if appearance can be switched by user
   back_home_text: "home..." # customize text for homepage link in post layout
   date_format: "%Y-%m-%d" # customize how date is formatted
   #show_description: true # show blog description

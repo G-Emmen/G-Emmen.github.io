@@ -27,7 +27,10 @@ hr.page-break {
   &:after { content: attr(data-content) '-----' }
 }
 
-p { margin: 1em 0; }
+p { 
+  margin: 1em 0;
+  font-size: 0.9em;
+ }
 
 ul {
   list-style: none;
@@ -169,7 +172,7 @@ html.transition *:after {
   outline: none;
 }
 .dashed {
-  border-top: 1px var(--text) dashed;
+  border-top: 1px var(--text) solid;
   margin: 0.5em 0;
 }
 mark {
