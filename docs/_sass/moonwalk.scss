@@ -112,8 +112,8 @@ html {
       --text-secondary: #9CA3AF;
       --code-text: #91A7FF;
       --share-text: #C4C4C4;
-  };
-  svg {fill: #FFF}
+  }
+  svg {fill: #FFF};
 }
 html[data-theme="dark"] { @include dark-appearance; }
 
