@@ -5,7 +5,7 @@ title: About me
 
 ### Hello. My name is Greg.
 
-<img style="float:left; margin:20px;" src="/assets/img/ProfilePic.jpg"><br>
+<img style="float:left; margin:10px;" src="/assets/img/ProfilePic.jpg"><br>
 &nbsp;&nbsp;&nbsp;&nbsp;Welcome to my personal website. I am a software and controls engineer working in the automotive & defense industries. My talents are in rapid prototyping, adaptable programming skills, and creative problem solving. I have a passion for creating new and useful technology to build a better world. If you would like to get in touch, the best method is by email at <greg.emmen@gmail.com>.
 <br><br>
 
@@ -23,12 +23,11 @@ title: About me
 
 ***
 
-<img style="float:left; padding:20px;" src="/assets/img/csu.png">
+<img style="float:right; margin:5px;" src="/assets/img/csu.png">
 
 ### Colorado State University
 Bachelor of Science in Mechanical Engineering
 2011 - 2015
-<br><br><br><br>
 
 #### Undergraduate Projects & Honors
 1. Pi Tau Sigma (PTS) Mechanical Engineering honor society member
@@ -36,12 +35,11 @@ Bachelor of Science in Mechanical Engineering
 
 ***
 
-<img style="float:left; padding:20px;" src="/assets/img/um-dearborn.png">
+<img style="float:right; margin:5px;" src="/assets/img/um-dearborn.png">
 
 ### University of Michigan - Dearborn
 Master of Science in Engineering (Energy Systems Engineering)
 2019 - 2021
-<br><br><br><br>
 
 #### Graduate Projects & Honors
 1.  Graduated with distinction (GPA 3.87)
