@@ -14,9 +14,9 @@ project_entries:
     url: satellite-attitude-control
     desc: Explored the implementation of an attitude control system to a simplified satellite model in MATLAB Simulink.
 
-  - title: CSU EcoCAR3 Controls Team
-    url: ecocar
-    desc: Undergraduate capstone project at Colorado State University. Developed initial supervisory control system for a hybrid Chevrolet Camaro.
+#  - title: CSU EcoCAR3 Controls Team
+#    url: ecocar
+#    desc: Undergraduate capstone project at Colorado State University. Developed initial supervisory control system for a hybrid Chevrolet Camaro.
 
 personal_project_entries:
   - title: 3D Printing
