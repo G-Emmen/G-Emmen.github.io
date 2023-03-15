@@ -27,6 +27,7 @@ title: About me
 
 ### Colorado State University
 Bachelor of Science in Mechanical Engineering
+
 2011 - 2015
 
 #### Undergraduate Projects & Honors
@@ -39,11 +40,12 @@ Bachelor of Science in Mechanical Engineering
 
 ### University of Michigan - Dearborn
 Master of Science in Engineering (Energy Systems Engineering)
+
 2019 - 2021
 
 #### Graduate Projects & Honors
-1.  Graduated with distinction (GPA 3.87)
-2.  <a href="https://github.com/G-Emmen/G-Emmen.github.io/raw/main/docs/assets/pdf/SatelliteControl.pdf" target="_blank">Satellite Attitude Control System</a>
+1. Graduated with distinction (GPA 3.87)
+2. <a href="https://github.com/G-Emmen/G-Emmen.github.io/raw/main/docs/assets/pdf/SatelliteControl.pdf" target="_blank">Satellite Attitude Control System</a>
 3. <a href="https://github.com/G-Emmen/G-Emmen.github.io/raw/main/docs/assets/pdf/RegenBrake.pdf" target="_blank">Regenerative Braking Control of the Brushless DC Motor Drive</a>
 
 ***
