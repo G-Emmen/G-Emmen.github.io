@@ -18,23 +18,23 @@ brake torque and regenerative capability. It also details the supporting hardwar
 #### MATLAB Simulink Model
 &nbsp;&nbsp;&nbsp;&nbsp;Electrical components were modeled using Simulink, along with the simscape blockset. The primary components modeled for this project include the HV Battery, a Bi-Directional DC/DC Converter with four-switch control logic, the Six-Switch inverter, and a Motor/Vehicle Model with current/voltage sensors on the BLDC motor.
 
-<img src="/assets/img/Regen_SimulinkModel.jpg">
+<img src="/assets/img/Regen_SimulinkModel.JPG">
 
 #### Analysis
 &nbsp;&nbsp;&nbsp;&nbsp;For this project, the model was 'driven' over a simple ramp & hold drive cycle. Input reference speed was provided, and the system was designed to try and match the speed with some limited amount of overshoot and settling time.
 
-<img src="/assets/img/MtrSpd_v_RefSpd.jpg" class="center">
+<img src="/assets/img/MtrSpd_v_RefSpd.JPG" class="center">
 
 &nbsp;&nbsp;&nbsp;&nbsp;Throughout the cycle, the voltage and current was measured at the motor to confirm that the values were within acceptable limits for being balanced by the Bi-Directional DC/DC converter for charging the HV Battery.
 
-<img src="/assets/img/Inverter_and_Batt_Volt.jpg" class="center">
-<img src="/assets/img/Converter_and_Batt_Curr.jpg" class="center">
+<img src="/assets/img/Inverter_and_Batt_Volt.JPG" class="center">
+<img src="/assets/img/Converter_and_Batt_Curr.JPG" class="center">
 
 &nbsp;&nbsp;&nbsp;&nbsp;The resulting energy flow over the ramp & hold drive cycle confirms the regenerative capability of different six-switch control strategies. Functionally, the inverter configuration can be switched into a configuration that will enable current to flow in the reverse direction, and in tandem with a Bi-Directional DC/DC converter, enabling the HV battery to charge. This is completed with a strategy called 'chopping' which implements a PWM controlled signal to rapidly open and close specific switches during regeneration in order to enable regeneration.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Changing the duty cycle associated with the 'chopping' will determine the effectiveness of regenerative braking. Lower duty cycles in this format amounted to a higher amount of energy recovered over the regeneration portion of the drive cycle.
 
-<img src="/assets/img/Percent_SOC_DC_Comp.jpg" class="center">
+<img src="/assets/img/Percent_SOC_DC_Comp.JPG" class="center">
 
 #### Takeaway & Conclusion
 
