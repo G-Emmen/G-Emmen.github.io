@@ -4,8 +4,6 @@ author: Greg Emmen
 tags: [projects]
 ---
 
-under construction
-
 ### Fall 2021 Term Project - MSE in Energy Systems Engineering
 &nbsp;&nbsp;&nbsp;&nbsp;This project was completed individually, based on a topic that I selected within the bounds of the ECE517 class learnings but also something that I personally found interesting. It involved development of a MATLAB Simulink model to approximate some of the dynamics around a single brushless DC motor in an automotive application. The focus of the project was on the development of a six-switch inverter control strategy that would allow for regenerative braking, charging the battery that was also used to drive the motor. Additionally, the supporting electrical hardware needed is detailed and modeled.
 
