@@ -4,4 +4,4 @@ author: Greg Emmen
 tags: [projects]
 ---
 
-Satellite Attitude Control
+Satellite Attitude Control - under construction

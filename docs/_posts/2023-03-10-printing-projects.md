@@ -4,4 +4,4 @@ author: Greg Emmen
 tags: [personal projects]
 ---
 
-3D Printing
+3D Printing - under construction
