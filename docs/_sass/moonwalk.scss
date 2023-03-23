@@ -247,3 +247,37 @@ p code, li code {
   text-transform: lowercase;
   //border: 1px solid var(--text-secondary);
 }
+
+.word-map {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  margin: 0em;
+  height: 100px;
+}
+
+.word-map__item {
+  background-color: #f3f4f6;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 1em;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  color: #6366f1;
+  border: 1px var(--text) solid;
+}
+
+.word-map__item:hover {
+  background-color: #f3f4f6;
+  transform: scale(1.1);
+}
+
+.word-map-info {
+  margin-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: #6b7280;
+}
