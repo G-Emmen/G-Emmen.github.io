@@ -28,6 +28,39 @@ ul.horizontal-list {
   margin-bottom: 0.8em;
   border-radius: 0.5em;
 
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+
+  .header {
+    color: var(--links);
+  }
+
+  .body {
+    font-size: 0.8em;
+  }
+
+  hr {
+    margin: 0.5em 0;
+  }
+
+}
+
+.card_large {
+  padding: 1em;
+  border: 1px var(--text) solid;
+  width: fit-content;
+  height: fit-content;
+  font-size: 1em;
+  align-items: center;
+  background-color: var(--bg-secondary);
+  margin-bottom: 0.8em;
+  border-radius: 0.5em;
+
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+
   .header {
     color: var(--links);
   }
