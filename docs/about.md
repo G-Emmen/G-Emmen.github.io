@@ -5,7 +5,7 @@ title: About me
 
 ### Hello. My name is Greg.
 
-<img style="float:left; margin:10px;" src="/assets/img/ProfilePic.jpg"><br>
+<img style="float:left; margin:1.5em;" src="/assets/img/ProfilePic.jpg"><br>
 &nbsp;&nbsp;&nbsp;&nbsp;Welcome to my personal website. I am a software and controls engineer working in the automotive & defense industries. My talents are in rapid prototyping, adaptable programming skills, and creative problem solving. I have a passion for creating new and useful technology to build a better world. If you would like to get in touch, the best method is by email at <greg.emmen@gmail.com>.
 <br><br>
 
