@@ -28,13 +28,17 @@ hr.page-break {
 }
 
 p { 
-  margin: 1em 0;
+  margin-top: 1em 0;
+  margin-bottom: 0em;
   font-size: 0.9em;
  }
 
 ul {
   list-style: none;
-  padding-left: 5px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0em;
+  padding-bottom: 0em;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -61,21 +65,21 @@ li img {
 
 table {
   table-layout: auto;
-  table-width: 75%;
   border: none;
   border-collapse: collapse;
-  padding: 0.4em;
-  padding-left: 0;
+  padding: 1em;
   margin: 1em;
 }
 
 table.skills {
-  table-width: 25%;
+  table-width: fit-content;
 }
 
 th, td {
-  width:50%;
+  width:fit-content;
+  height:fit-content;
   vertical-align: top;
+  padding: 0.5em;
 }
 
 div.highlighter-rouge pre code, pre code.highlighter-rouge {
@@ -241,3 +245,5 @@ p code, li code {
   text-transform: lowercase;
   //border: 1px solid var(--text-secondary);
 }
+
+.skills{padding:1em;}

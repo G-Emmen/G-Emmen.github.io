@@ -3,6 +3,8 @@ ul.horizontal-list {
   //justify-content: space-between;
   margin-top: 0em;
   flex-wrap: wrap;
+  padding-left: 0em;
+  padding-right: 0em;
 
   li {
     display:inline;
@@ -47,7 +49,10 @@ ul.horizontal-list {
 }
 
 .card_large {
-  padding: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
   border: 1px var(--text) solid;
   width: fit-content;
   height: fit-content;
