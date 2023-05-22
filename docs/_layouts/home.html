@@ -25,10 +25,16 @@ layout: default
   </div>
 </div>
 
- <h2>Skills & Capabilities</h2>
+<h2>Skills & Capabilities</h2>
 
 <div class="card_large">
   {% include skills_and_capabilities.html %}
+</div>
+
+<h2>Education</h2>
+
+<div class="card_large">
+  {% include education.html %}
 </div>
 
 {{ content }}
@@ -42,11 +48,6 @@ layout: default
 {% if site.theme_config.show_blog == true %}
   <h2>{{ site.theme_config.home.title_blog }}</h2>
   {% include post_list.html %}
-{% endif %}
-
-{% if site.theme_config.show_personal_projects == true %}
-  <h2>{{ site.theme_config.home.title_personal_projects }}</h2>
-  {% include card_list.html collection=site.data.home.personal_project_entries %}
 {% endif %}
 
 {% if site.theme_config.show_footer == true %}

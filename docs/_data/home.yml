@@ -14,19 +14,22 @@ project_entries:
     url: satellite-attitude-control
     desc: Explored the implementation of an attitude control system to a simplified satellite model in MATLAB Simulink.
 
-#  - title: CSU EcoCAR3 Controls Team
-#    url: ecocar
-#    desc: Undergraduate capstone project at Colorado State University. Developed initial supervisory control system for a hybrid Chevrolet Camaro.
-
-personal_project_entries:
   - title: 3D Printing
     url: printing-projects
     desc: 3D modeling and FDM printing for personal applications. Functional prints for the home, and decorative prints for fun.
+    highlight: HOBBY
 
   - title: Robopocalypse
     url: robopocalypse
     desc: Card based board game with a focus on collecting robots and preventing others from doing the same.
-    highlight: WIP
+    highlight: HOBBY
+
+#  - title: CSU EcoCAR3 Controls Team
+#    url: ecocar
+#    desc: Undergraduate capstone project at Colorado State University. Developed initial supervisory control system for a hybrid Chevrolet Camaro.
+
+# personal_project_entries:
+
 
 footer_entries:
 #  - title: LinkedIn
