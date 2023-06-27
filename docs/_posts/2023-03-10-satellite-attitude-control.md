@@ -14,7 +14,7 @@ Read the full report: <a href="https://github.com/G-Emmen/G-Emmen.github.io/raw/
 including ease of modifications (software versus hardware), low cost, and their low susceptibility to noise, environment, and aging. Knowing the system’s open-loop response is important when designing a controller for a closed-loop system. The system is inherently open-loop unstable as any input or disturbance
 will cause the satellite to continuously spin without a means of stopping as the satellite is assumed to be in space (i.e., a nearly frictionless environment). Therefore, a tuned closed-loop control system, using a Proportional-Integral-Derivative (PID) controller, is required to position the satellite correctly and remain stable.
 
-<img src="/assets/img/satellite_graphic.png" class="center">
+<img src="/assets/img/satellite_graphic.png">
 
 #### Open & Closed Loop Control System Examples
 &nbsp;&nbsp;&nbsp;&nbsp;To analyze this system we looked at both the idea of open loop and closed loop control system. The open loop model includes a sampler with Zero-Order Hold (ZOH), which feeds an error signal into the PID controller. A component for disturbance was included, which would allow for us to consider the effect of external applications and how a system might respond. The physical model takes in the resulting torque values and determines the outgoing attitude of the satellite.
