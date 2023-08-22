@@ -18,7 +18,7 @@ tags: [personal projects]
 
 &nbsp;
 
-<img src="/assets/img/SilicaContainer.JPG" class="center">
+<img src="/assets/img/SilicaContainer.jpg" class="center">
 
 &nbsp;
 
@@ -32,7 +32,7 @@ tags: [personal projects]
 
 &nbsp;
 
-<img src="/assets/img/BottleCage.JPG" class="center">
+<img src="/assets/img/BottleCage.jpg" class="center">
 
 &nbsp;
 
@@ -46,7 +46,7 @@ tags: [personal projects]
 
 &nbsp;
 
-<img src="/assets/img/DiceTower.JPG" class="center">
+<img src="/assets/img/DiceTower.jpg" class="center">
 
 &nbsp;
 
@@ -60,4 +60,4 @@ tags: [personal projects]
 
 &nbsp;
 
-<img src="/assets/img/VeryLargeD20.JPG" class="center">
+<img src="/assets/img/VeryLargeD20.jpg" class="center">
