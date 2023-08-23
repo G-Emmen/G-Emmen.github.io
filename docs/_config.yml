@@ -5,7 +5,7 @@ url: "" # root address of the site
 
 permalink: /:slug
 
-#favicon: "./logo.png" # relative path to site's favicon
+# favicon: "/assets/icons/favicon-32x32.png" # relative path to site's favicon
 
 #theme: moonwalk # if you are using GitHub Pages, change it to remote_theme: abhinavs/moonwalk
 remote_theme: abhinavs/moonwalk
