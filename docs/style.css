@@ -9,9 +9,6 @@ body {
 ul {
   list-style: none;
   padding: 0em;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  vertical-align: middle;
 }
 
 li { 
@@ -31,8 +28,9 @@ li img {
 
 p {
   text-align: left;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 0;
 }
 
 h1 {
@@ -52,35 +50,32 @@ h2 {
   text-align: center;
 }
 
-.container {
+.about_me {
+  height: fit-content;
+  background-color: ghostwhite;
+  clear: both;
+  margin-top: 0;
+  padding: 1rem;
+}
+
+.firstblock {
+  margin: auto;
+  padding: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  padding-top: 1rem;
 }
 
-.column {
-  border-style: solid;
-  border-width: 1px;
-  padding: 10px;
-  background-color: ghostwhite;
-  border-radius: 5px;
-}
-
-.about_me {
-  padding: 10px;
-  height: fit-content;
-  background-color: ghostwhite;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 1rem;
+.firstblock_contact {
+  display: inline-block;
 }
 
 .portfolio {
   clear: both;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 1rem;
+  margin: auto;
 }
 
 .portfolio div{
@@ -92,12 +87,8 @@ h2 {
   border-radius: 5px;
 }
 
-.skills p{
-  margin: 0px;
-}
-
-.about_me img{
-  float: left;
+.firstblock_profilepic img{
+  float: right;
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
@@ -105,27 +96,36 @@ h2 {
 }
 
 @media (max-width: 800px) {
-  .container {
-    grid-template-columns: 1fr;
-  }
-
-  .about_me {
-    grid-template-columns: 1fr;
-  }
-
-  .portfolio {
-    grid-template-columns: 1fr;
-  }
-
-  .about_me img{
-    display: block;
+  .firstblock_profilepic img{
+    display: inline-block;
     margin: auto;
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-110%);
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
+  }
+
+  .firstblock {
+    grid-template-columns: 1fr;
+    gap:0;
+  }
+
+  .firstblock_contact {
+    display: inline-block;
+    margin: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-65%);
+    margin-top: 0;
+  }
+
+  .about_me {
+    padding-top:0;
+    padding-left:1rem;
+    padding-right:1rem;
+    padding-bottom:1rem;
   }
 }
 
