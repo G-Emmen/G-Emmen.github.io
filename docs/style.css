@@ -1,7 +1,6 @@
 body {
   margin: auto;
   padding: 10px;
-  background-color: ghostwhite;
   font: 18px Tahoma, sans-serif;
   max-width: 800px;
 }
@@ -52,7 +51,6 @@ h2 {
 
 .about_me {
   height: fit-content;
-  background-color: ghostwhite;
   clear: both;
   margin-top: 0;
   padding: 1rem;
@@ -83,7 +81,6 @@ h2 {
   border-width: 1px;
   padding: 10px;
   height: fit-content;
-  background-color: ghostwhite;
   border-radius: 5px;
 }
 
