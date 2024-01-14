@@ -2,20 +2,62 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="./scripts.js"></script> 
 </head>
 
-<body>
-  <h1 class="header">Greg Emmen</h1>
-  <hr style="height:1px;border-width:0;background-color:black;margin-bottom:0">
+<body onload="document.getElementById('defaultOpen').click()">
 
-  <div class="firstblock">
-    <div class="firstblock_profilepic">
-      <img src="https://github.com/G-Emmen/G-Emmen.github.io/blob/main/docs/assets/img/ProfilePic.jpg?raw=true" alt="Greg Emmen - Profile Pic">
+  <!-- header start -->
+
+  <h1 class="header">Greg Emmen</h1>
+
+  <!-- header end -->
+
+  <div class="tab">
+    <button class="tablinks" onclick="openSection(event, 'about me')" id="defaultOpen">about me</button>
+    <button class="tablinks" onclick="openSection(event, 'projects')">projects</button>
+    <button class="tablinks" onclick="openSection(event, 'contact')">contact</button>
+  </div>
+
+  <!-- tab content start -->
+
+  <div id="about me" class="tabcontent">
+    <div class="about_me">
+      <div>
+        <img src="https://github.com/G-Emmen/G-Emmen.github.io/blob/main/docs/assets/img/ProfilePic.jpg?raw=true" alt="Greg Emmen - Profile Pic">
+      </div>
+      <div>
+        <p>
+           Hello! Welcome to my personal webpage. I am a software and controls engineer currently working in the automotive industry.<br> <br> For examples of some of the work I've done, and a showcase of my skills, look on the projects tab. If you would like to get in touch the best method is by email at <a href="mailto:greg.emmen@gmail.com">greg.emmen@gmail.com</a>.
+        </p>
+      </div>
     </div>
-    <div class="firstblock_contact">
+  </div>
+
+  <div id="projects" class="tabcontent">
+    <div class="portfolio">
+      <div class="project">
+        <h2><a href="./">Bank Churn Classification</a></h2>
+      </div>
+      <div>
+        <h2><a href="./project_pages/regenerative-braking.html">Regenerative Braking Control Method</a></h2>
+      </div>
+      <div>
+        <h2><a href="./project_pages/satellite-attitude-control.html">Satellite Attitude Control System</a></h2>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" class="tabcontent">
+
+
+    <div class="contact">
       <ul>
         <li class="email"><img src="./assets/icons/email.svg">
           <a href="mailto:greg.emmen@gmail.com">greg.emmen@gmail.com</a>
@@ -36,30 +78,13 @@
     </div>
   </div>
 
-  <div class="about_me">
-    <div>
-      <p>
-         Hello! Welcome to my personal webpage. I am a software and controls engineer currently working in the automotive industry.<br> <br> Please take a look at some of my projects below. If you would like to get in touch the best method is by email at <a href="mailto:greg.emmen@gmail.com">greg.emmen@gmail.com</a>.
-      </p>
-    </div>
-  </div>
+  <!-- tab content end -->
 
+  <!--- quote start -->
 
+  <p style="text-align: center; font-style: italic; font-size: 15px;">"A person who never made a mistake never tried anything new."<br>-Albert Einstein</p>
 
-  <div class="portfolio">
-    <div class="project">
-      <h2><a href="./">Bank Churn Classification</a></h2>
-    </div>
-    <div>
-      <h2><a href="./project_pages/regenerative-braking.html">Regenerative Braking Control Method</a></h2>
-    </div>
-    <div>
-      <h2><a href="./project_pages/satellite-attitude-control.html">Satellite Attitude Control System</a></h2>
-    </div>
-  </div>
+  <!--- quote end -->
 
-  <hr style="height:1px;border-width:0;background-color:black; margin-top:2rem;margin-bottom:1rem">
-
-  <p style="text-align: center; font-style: italic; font-size: 12px;">"A person who never made a mistake never tried anything new."<br>-Albert Einstein</p>
 </body>
 </html>
