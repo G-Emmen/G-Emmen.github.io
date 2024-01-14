@@ -4,14 +4,29 @@ body {
   font-family: 'Roboto', sans-serif;
   letter-spacing: .05rem;
   max-width: 800px;
+  height: 100%;
+  background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-ul {
+html {
+  height: 100%
+}
+
+mark {
+  background-color: lightgreen;
+  border-radius: 5px;
+  padding: .2rem;
+  margin: .2rem;
+}
+
+.contact ul {
   list-style: none;
   padding: 0em;
 }
 
-li { 
+.contact li { 
   display: flex;
   padding-left: 10px;
   padding-top: 5px;
@@ -19,8 +34,8 @@ li {
   align-items: center;
 }
 
-li svg,
-li img {
+.contact li svg,
+.contact li img {
   margin-right: 20px;
   height: 30px;
   width: 30px;
@@ -34,14 +49,18 @@ p {
 }
 
 h1 {
-  font-weight: lighter;
   font-size: 56px;
+  font-weight: lighter;
+  text-decoration: underline 3px solid black; 
 }
 
 h2 {
-  padding: 0.5rem;
-  margin-top: 0;
-  text-align: left;
+  font-size: 36px;
+  font-weight: lighter;
+}
+
+h3 {
+  font-size: 24px;
   font-weight: lighter;
 }
 
@@ -59,6 +78,37 @@ h2 {
 .about_me img {
   border-radius: 5px;
   border: 1px solid black;
+}
+
+.skill h3 {
+  padding: 1rem;
+  margin: 0;
+}
+
+.contact h3 {
+  padding: 1rem;
+  margin: 0;
+}
+
+.skill p {
+  margin-top: 0;
+}
+
+.skillAndContact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+
+.skill {
+  display: inline-block;
+  text-align: left;
+}
+
+.contact {
+  display: inline-block;
+  text-align: left;
+  padding: 0;
 }
 
 .portfolio {
@@ -140,6 +190,11 @@ h2 {
   }
 
   .contact {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .skillAndContact {
     grid-template-columns: 1fr;
     place-items: center;
   }
