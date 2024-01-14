@@ -68,6 +68,12 @@ h2 {
   gap: 1rem;
 }
 
+.project {
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
 .contact {
   display: grid;
   padding: 1rem;
@@ -77,7 +83,7 @@ h2 {
 .tab {
   overflow: hidden;
   margin:auto;
-  width:90%;
+  width:95%;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -120,6 +126,7 @@ h2 {
   border: 1px solid black;
   border-radius: 5px;
   margin-top:-1px;
+  background-color: white;
 }
 
 @media (max-width: 800px) {
