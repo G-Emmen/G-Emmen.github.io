@@ -33,13 +33,46 @@ h1 {
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: lighter;
 }
 
-h3 {
-  font-size: 24px;
-  font-weight: lighter;
+.markSkill {
+  background-color: lightgreen;
+  border-radius: 5px;
+  margin: 0;
+  padding-left: .2rem;
+  padding-right: .2rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.markLink {
+  background-color: lightblue;
+  border-radius: 5px;
+  padding-left: .2rem;
+  padding-right: .2rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.markLink a:link {
+  color:black;
+  text-decoration: none;
+}
+
+.markLink a:visited {
+  color:black;
+  text-decoration: none;
+}
+
+.markLink a:hover {
+  color:black;
+  text-decoration: underline;
+}
+
+.markLink a:active {
+  color:black;
 }
 
 .header {
@@ -59,7 +92,7 @@ h3 {
   border: 1px solid black;
 }
 
-.skill h3 {
+.skill h2 {
   padding: 1rem;
   margin: 0;
 }
@@ -68,7 +101,7 @@ h3 {
   margin-top: 0;
 }
 
-.contact h3 {
+.contact h2 {
   padding: 1rem;
   margin: 0;
 }
@@ -110,6 +143,7 @@ h3 {
   text-align: center;
   padding-left:4rem;
   padding-right:4rem;
+  padding-bottom:1rem;
 }
 
 .skill {
@@ -122,17 +156,45 @@ h3 {
   text-align: left;
 }
 
-.portfolio {
+.portfolio img{
+  border-radius: 5px;
+  border: 1px solid black;
+  height:100%;
+  width:100%;
+  object-fit:cover;
+  object-aligh: center;
+}
+
+.project {
   display: grid;
   grid-template-columns: 1fr;
+  padding: 1rem;
+  text-align: left;
+}
+
+.project h2 {
+  margin: 0;
+}
+
+.projectOne {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   padding: 1rem;
   gap: 1rem;
 }
 
-.project {
-  border-radius: 5px;
-  border: 1px solid black;
+.projectTwo {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   padding: 1rem;
+  gap: 1rem;
+}
+
+.projectThree {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 1rem;
+  gap: 1rem;
 }
 
 /* Style the tab */
@@ -153,7 +215,7 @@ h3 {
   outline: none;
   cursor: pointer;
   padding: 5px 5px;
-  transition: 0.1s;
+  transition: 0s;
   font-family: 'Roboto', sans-serif;
   letter-spacing: .05rem;
 }
@@ -205,5 +267,23 @@ h3 {
     place-items: center;
     padding-left:0rem;
     padding-right:0rem;
+  }
+
+  .projectOne {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .projectTwo {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .projectThree {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
   }
 }
