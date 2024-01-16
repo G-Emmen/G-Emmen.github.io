@@ -21,6 +21,25 @@ mark {
   color: black;
 }
 
+.markLink a:link {
+  color:black;
+  text-decoration: none;
+}
+
+.markLink a:visited {
+  color:black;
+  text-decoration: none;
+}
+
+.markLink a:hover {
+  color:black;
+  text-decoration: underline;
+}
+
+.markLink a:active {
+  color:black;
+}
+
 p {
   text-align: left;
   padding-left: 1rem;
@@ -290,4 +309,15 @@ h2 {
     height: 100%;
     margin-bottom:1rem;
   }
+}
+
+iframe {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100%;
+  height: 700px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
