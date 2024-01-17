@@ -1,24 +1,56 @@
-body {
+html {
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+}
+
+/*
+.dark-mode {
+  --main-bg-color: #718475;
+  --main-fg-color: #ECEFED;
+  --secondary-fg-color: #D9DFDA;
+  --main-content-color: #002B36;
+  --highlight-color_one: #B2D69A; 
+  --highlight-color_two: #A3C7E1;
+
   margin: auto;
   padding: 10px;
   font-family: 'Roboto', sans-serif;
   letter-spacing: .05rem;
   max-width: 800px;
   height: 100%;
-  background-color: whitesmoke;
-  color: black;
-}
+  background-color: var(--main-bg-color);
+  color: var(--main-content-color);
 
-html {
-  height: 100%
+  transition: background-color 1s ease-in-out;
+}
+*/
+
+body {
+  --main-bg-color: #C8D0CA;
+  --main-fg-color: #ECEFED;
+  --secondary-fg-color: #D9DFDA;
+  --main-content-color: #002B36;
+  --highlight-color_one: #B2D69A; /*green*/
+  --highlight-color_two: #A3C7E1; /*blue*/
+
+  margin: auto;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: .05rem;
+  max-width: 800px;
+  height: 100%;
+  background-color: var(--main-bg-color);
+  color: var(--main-content-color);
+
+  transition: background-color 1s ease-in-out;
 }
 
 mark {
-  background-color: lightgreen;
+  background-color: var(--highlight-color_one);
   border-radius: 5px;
   padding: .2rem;
   margin: .2rem;
-  color: black;
+  color: var(--main-content-color);
 }
 
 p {
@@ -29,9 +61,9 @@ p {
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 50px;
   font-weight: lighter;
-  text-decoration: underline 3px solid black; 
+  text-decoration: underline 3px solid var(--main-content-color); 
 }
 
 h2 {
@@ -43,27 +75,33 @@ ul {
   list-style-type: circle;
 }
 
+hr {
+  height:1px;
+  background-color: var(--main-content-color);
+  border-width: 0;
+}
+
 .markLink a:link {
-  color:black;
+  color:var(--main-content-color);
   text-decoration: none;
 }
 
 .markLink a:visited {
-  color:black;
+  color:var(--main-content-color);
   text-decoration: none;
 }
 
 .markLink a:hover {
-  color:black;
+  color:var(--main-content-color);
   text-decoration: underline;
 }
 
 .markLink a:active {
-  color:black;
+  color:var(--main-content-color);
 }
 
 .markSkill {
-  background-color: lightgreen;
+  background-color: var(--highlight-color_one);
   border-radius: 5px;
   margin: 0;
   padding-left: .2rem;
@@ -73,7 +111,7 @@ ul {
 }
 
 .markLink {
-  background-color: lightblue;
+  background-color: var(--highlight-color_two);
   border-radius: 5px;
   padding-left: .2rem;
   padding-right: .2rem;
@@ -82,7 +120,16 @@ ul {
 }
 
 .header {
-  text-align: center;
+  display: block;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 0px solid var(--main-content-color);
+  background-color: var(--main-fg-color);
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  width: fit-content;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .about_me {
@@ -95,7 +142,7 @@ ul {
 
 .about_me img {
   border-radius: 5px;
-  border: 1px solid black;
+  border: 1px solid var(--main-content-color);
 }
 
 .skill h2 {
@@ -118,7 +165,7 @@ ul {
 }
 
 .contact mark {
-  background-color: lightblue;
+  background-color: var(--highlight-color_two);
   border-radius: 5px;
   padding: .2rem;
   margin: .2rem;
@@ -145,7 +192,7 @@ ul {
 
 .portfolio img{
   border-radius: 5px;
-  border: 1px solid black;
+  border: 1px solid var(--main-content-color);
   height:100%;
   width:100%;
   object-fit:cover;
@@ -199,7 +246,7 @@ ul {
   float: right;
   width: 40%;
   height: 40%;
-  margin-right: 1rem;
+  margin-left: 1rem;
   margin-bottom: .1rem;
 }
 
@@ -208,52 +255,67 @@ ul {
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap:2px;
+  gap: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
-  background-color: ghostwhite;
+  background-color: var(--secondary-fg-color);
   float: center;
-  border: 1px solid black;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border: 0px solid var(--main-content-color);
   outline: none;
   cursor: pointer;
   padding: 5px 5px;
   transition: 0s;
   font-family: 'Roboto', sans-serif;
   letter-spacing: .05rem;
-  color: black;
+  color: var(--main-content-color);
+  font-size: medium;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
   text-decoration: underline;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom: 1px solid black;
+  border-bottom: 0px solid var(--main-content-color);
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  text-decoration-color: white;
-  background-color: white;
-  border: 1px solid black;
-  border-bottom: 1px solid white;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  text-decoration-color: var(--main-fg-color);
+  background-color: var(--main-fg-color);
+  border: 0px solid var(--main-content-color);
+  border-bottom: 0px;
+  padding-bottom: 5px;
 }
 
 /* Style the tab content */
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid black;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border: 0px solid var(--main-content-color);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
   margin-top:-1px;
-  background-color: white;
+  background-color: var(--main-fg-color);
+}
+
+.content {
+  border-radius: 10px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+iframe {
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  height: 600px;
+  width: 600px;
+  border-radius: 10px;
+  border: 1px solid var(--main-content-color);
 }
 
 @media (max-width: 800px) {
@@ -313,15 +375,8 @@ ul {
     height: 100%;
     margin-bottom:1rem;
   }
-}
 
-iframe {
-  display: grid;
-  grid-template-columns: 1fr;
-  border: 1px solid black;
-  border-radius: 5px;
-  width: 100%;
-  height: 700px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  iframe {
+    width: 100%;
+  }
 }

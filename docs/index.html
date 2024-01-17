@@ -17,19 +17,20 @@
 
   <div class="header">
     <div style="display: inline-block; text-align: left;">
-      <p style="margin-bottom:.1rem; margin-top:2rem; padding:0;"><mark>Hello, my name is</mark></p>
-      <h1 style="margin-top:0;">Greg Emmen</h1>
+      <p style="margin-bottom:.1rem; margin-top:0; padding:0;"><mark>Hello, my name is</mark></p>
+      <h1 style="margin-top:0; margin-bottom:0;">Greg Emmen</h1>
     </div>
   </div>
 
   <!-- header end -->
 
   <!-- tab content start -->
+  <div class="content">
 
   <div class="tab">
     <button class="tablinks" onclick="openSection(event, 'about_me')" id="tab1">about me</button>
     <button class="tablinks" onclick="openSection(event, 'projects')" id="tab2">projects</button>
-    <button class="tablinks" onclick="openSection(event, 'bonus')" id="tab3">bonus!</button>
+    <button class="tablinks" onclick="openSection(event, 'bonus')" id="tab3">bonus</button>
   </div>
 
   <!-- "about me" section start -->
@@ -46,7 +47,7 @@
       </div>
     </div>
 
-    <hr style="height:1px;background-color:#073642;border-width:0;">
+    <hr>
 
     <div class="skillAndContact">
       <div class="contact">
@@ -65,9 +66,9 @@
       </div>
     </div>
 
-    <hr style="height:1px;background-color:#073642;border-width:0;">
+    <hr>
 
-    <p style="text-align: center; font-style: italic; font-size: 15px; padding: 1rem">"A person who never made a mistake never tried anything new."<br>-Albert Einstein</p>
+    <p style="text-align: center; font-style: italic; font-size: small; padding: 1rem">"A person who never made a mistake never tried anything new."<br>-Albert Einstein</p>
 
   </div>
 
@@ -90,7 +91,7 @@
         </div>
       </div>
 
-      <hr style="height:1px;background-color:#073642;border-width:0;">
+      <hr>
 
       <div class="project">
         <h2>Regenerative Braking Control Method</h2>
@@ -104,7 +105,7 @@
         </div>
       </div>
 
-      <hr style="height:1px;background-color:#073642;border-width:0;">
+      <hr>
 
       <div class="project">
         <h2>Satellite Attitude Control System</h2>
@@ -128,21 +129,14 @@
 
   <div id="bonus" class="tabcontent">
     <div class="bonus">
-      <h2 style="text-align:center;">This website is a work in progress</h2>
-      <hr style="height:1px;background-color:#073642;border-width:0;">
-      <p> To-Do list </p>
-      <ul>
-        <li>Apply a dark/light color scheme and implement a button to switch between the two</li>
-        <li>Explore the possibility of animating design elements with CSS and JavaScript</li>
-        <li>Add more projects to my portfolio</li>
-      </ul>
-      <hr style="height:1px;background-color:#073642;border-width:0;">
-      <p>Enjoy a little choose-your-own-adventure game built into my site. Just for fun!</p>
-      <iframe src="otto_adventure.html" iframetag></iframe>
+      <p style="text-align:center;">Enjoy a little choose-your-own-adventure game built into my site. Just for fun!</p>
+      <iframe src="otto_adventure.html" loading="lazy"></iframe>
     </div>
   </div>
 
   <!-- "bonus" section end -->
+
+  </div>
 
   <!-- tab content end -->
 
