@@ -1,0 +1,102 @@
+:: StoryTitle
+Otto's Adventure
+
+
+:: StoryData
+{
+  "ifid": "43E86A7D-1E04-46C7-9537-B224FD2D5BB0",
+  "format": "Chapbook",
+  "format-version": "1.2.3",
+  "start": "Title Card",
+  "zoom": 1
+}
+
+
+:: A blue and tan band resembling the beach and the sea {"position":"700,400","size":"100,100"}
+The most magnificent collar you've ever seen.
+
+It's quite possibly worth more than any treasure you might find on this adventure.
+
+Now, on to important business...
+
+[[Where to go?]] 
+
+
+:: A crimson red band with golden embroidery {"position":"900,400","size":"100,100"}
+A truly regal item worthy of Kings.
+
+It's quite possibly worth more than any treasure you might find on this adventure.
+
+Now, on to important business...
+
+[[Where to go?]] 
+
+
+:: Head to the west, towards the Furry-Critter Forest? {"position":"1200,900","size":"100,100"}
+To be continued...
+
+
+:: Let's begin! {"position":"800,200","size":"100,100"}
+It's a warm sunny day in the Kingdom of Woof.
+Otto, the jet-black Irish Doodle, stands alone in a grassy field.
+
+Today, Otto is wearing his lucky collar. It looks like...
+
+- [[A crimson red band with golden embroidery]]
+- [[A blue and tan band resembling the beach and the sea]]
+
+
+:: Run to the North and try to taunt the Big Borker just for fun? {"position":"800,900","size":"100,100"}
+To be continued...
+
+
+:: Sit down and enjoy the sunshine? {"position":"600,700","size":"100,100"}
+As you sit for a few moments here in the glorious daylight, your eyes close for just a moment. A gentle breeze brings the comforting scent of grass and dirt wafting past your nose.
+
+Time passes before you suddenly realize. You have a full day ahead! Time for adventure! Which path will you choose?
+
+- [[Run to the North and try to taunt the Big Borker just for fun?]]
+- [[Take your chances at scaling Roughpaw Ridge?]]
+- [[Head to the west, towards the Furry-Critter Forest?]]
+
+
+:: Take your chances at scaling Roughpaw Ridge? {"position":"1000,900","size":"100,100"}
+To be continued...
+
+
+:: Title Card {"position":"800,0","size":"100,100"}
+<h1>Otto's Adventure</h1>
+
+[[Let's begin!]]
+
+
+:: Turn around and head home for a nice nap? {"position":"1200,500","size":"100,100"}
+Some day's there's nothing better than a restful nap on a comfy bed. Adventure can wait for another day, there will always be something to do!
+
+[[Back to the beginning?->Let's begin!]] 
+
+
+:: Where to go? {"position":"800,600","size":"100,100"}
+To the North lie the lands of the Big Borker; a dubious warlord whose bark is much worse than their bite.
+
+To the south, the keep of Pupperton beckons. He can always count on the Lord of the keep to have a warm bed and good belly rubs waiting for him after an adventure.
+
+Out of the rolling hills to his East rises the crumbling sheer stone cliffs of Roughpaw Ridge. Dangerous territory for a pup without provisions.
+
+To the West, the tall-grass of the plains shifts into the Furry-Critter Forest. All manner of small and insignificant fluffballs can run and hide in the knotty roots and gnarled branches there.
+
+Do you...
+
+- [[Sit down and enjoy the sunshine?]]
+- [[Run to the North and try to taunt the Big Borker just for fun?]]
+- [[Turn around and head home for a nice nap?]]
+- [[Take your chances at scaling Roughpaw Ridge?]]
+- [[Head to the west, towards the Furry-Critter Forest?]]
+
+
+:: StoryStylesheet [stylesheet]
+body {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
