@@ -63,7 +63,6 @@ p {
 h1 {
   font-size: 50px;
   font-weight: lighter;
-  text-decoration: underline 3px solid var(--main-content-color); 
 }
 
 h2 {
