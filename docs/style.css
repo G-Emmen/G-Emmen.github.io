@@ -375,6 +375,26 @@ iframe {
     margin-bottom:1rem;
   }
 
+  .markLink a:link {
+    color:var(--main-content-color);
+    text-decoration: underline;
+  }
+
+  .markLink a:visited {
+    color:var(--main-content-color);
+    text-decoration: underline;
+  }
+
+  .markLink a:hover {
+    color:var(--main-content-color);
+    text-decoration: underline;
+  }
+
+  .markLink a:active {
+    color:var(--main-content-color);
+    text-decoration: underline;
+  }
+
   iframe {
     width: 100%;
   }
