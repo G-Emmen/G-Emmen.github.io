@@ -16,6 +16,9 @@ function openSection(evt, sectionName) {
 }
 
 document.addEventListener("DOMContentLoaded", function(){
+  
+  localStorage.clear()
+
   var selectedTab = sessionStorage.getItem("activeTab");
   if (selectedTab === "about_me") {
     document.getElementById("tab1").click();
