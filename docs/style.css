@@ -41,8 +41,6 @@ body {
   height: 100%;
   background-color: var(--main-bg-color);
   color: var(--main-content-color);
-
-  transition: background-color 1s ease-in-out;
 }
 
 mark {
