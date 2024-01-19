@@ -3,28 +3,6 @@ html {
   scrollbar-gutter: stable;
 }
 
-/*
-.dark-mode {
-  --main-bg-color: #718475;
-  --main-fg-color: #ECEFED;
-  --secondary-fg-color: #D9DFDA;
-  --main-content-color: #002B36;
-  --highlight-color_one: #B2D69A; 
-  --highlight-color_two: #A3C7E1;
-
-  margin: auto;
-  padding: 10px;
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: .05rem;
-  max-width: 800px;
-  height: 100%;
-  background-color: var(--main-bg-color);
-  color: var(--main-content-color);
-
-  transition: background-color 1s ease-in-out;
-}
-*/
-
 body {
   --main-bg-color: #C8D0CA;
   --main-fg-color: #ECEFED;
@@ -64,7 +42,7 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 25px;
   font-weight: lighter;
 }
 
@@ -76,6 +54,18 @@ hr {
   height:1px;
   background-color: var(--main-content-color);
   border-width: 0;
+}
+
+iframe {
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  height: 600px;
+  width: 600px;
+  border-radius: 10px;
+  border: 1px solid var(--main-content-color);
 }
 
 .markLink a:link {
@@ -97,19 +87,19 @@ hr {
   color:var(--main-content-color);
 }
 
-.markSkill {
-  background-color: var(--highlight-color_one);
+.markLink {
+  background-color: var(--highlight-color_two);
   border-radius: 5px;
-  margin: 0;
   padding-left: .2rem;
   padding-right: .2rem;
   padding-top: 0;
   padding-bottom: 0;
 }
 
-.markLink {
-  background-color: var(--highlight-color_two);
+.markSkill {
+  background-color: var(--highlight-color_one);
   border-radius: 5px;
+  margin: 0;
   padding-left: .2rem;
   padding-right: .2rem;
   padding-top: 0;
@@ -142,6 +132,15 @@ hr {
   border: 1px solid var(--main-content-color);
 }
 
+.skillAndContact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 1rem;
+}
+
 .skill h2 {
   padding: 1rem;
   margin: 0;
@@ -168,15 +167,6 @@ hr {
   margin: .2rem;
 }
 
-.skillAndContact {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  text-align: center;
-  padding-left:4rem;
-  padding-right:4rem;
-  padding-bottom:1rem;
-}
-
 .skill {
   display: inline-block;
   text-align: left;
@@ -190,10 +180,14 @@ hr {
 .portfolio img{
   border-radius: 5px;
   border: 1px solid var(--main-content-color);
-  height:100%;
-  width:100%;
+  max-width: 358px;
+  max-height: 200px;
+  width: auto;
+  height: auto;
   object-fit:cover;
-  object-aligh: center;
+  float: right;
+  margin: 1rem;
+  margin-bottom: .5rem;
 }
 
 .project {
@@ -205,49 +199,9 @@ hr {
 
 .project h2 {
   margin: 0;
-  margin-left: 1rem;
+  text-align: center;
 }
 
-.projectOne {
-  display: block;
-  padding: 1rem;
-}
-
-.projectOne img {
-  float: right;
-  width: 50%;
-  height: 50%;
-  margin-left: 1rem;
-  margin-bottom: .1rem;
-}
-
-.projectTwo {
-  display: block;
-  padding: 1rem;
-}
-
-.projectTwo img {
-  float: right;
-  width: 50%;
-  height: 50%;
-  margin-left: 1rem;
-  margin-bottom: .1rem;
-}
-
-.projectThree {
-  display: block;
-  padding: 1rem;
-}
-
-.projectThree img {
-  float: right;
-  width: 40%;
-  height: 40%;
-  margin-left: 1rem;
-  margin-bottom: .1rem;
-}
-
-/* Style the tab */
 .tab {
   overflow: hidden;
   display: grid;
@@ -257,7 +211,6 @@ hr {
   border-top-right-radius: 10px;
 }
 
-/* Style the buttons that are used to open the tab content */
 .tab button {
   background-color: var(--secondary-fg-color);
   float: center;
@@ -272,13 +225,11 @@ hr {
   font-size: medium;
 }
 
-/* Change background color of buttons on hover */
 .tab button:hover {
   text-decoration: underline;
   border-bottom: 0px solid var(--main-content-color);
 }
 
-/* Create an active/current tablink class */
 .tab button.active {
   text-decoration-color: var(--main-fg-color);
   background-color: var(--main-fg-color);
@@ -287,7 +238,6 @@ hr {
   padding-bottom: 5px;
 }
 
-/* Style the tab content */
 .tabcontent {
   display: none;
   padding: 6px 12px;
@@ -301,18 +251,14 @@ hr {
 .content {
   border-radius: 10px;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  margin-bottom: 4rem
 }
 
-iframe {
-  display: block;
-  margin: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.quote {
   text-align: center;
-  height: 600px;
-  width: 600px;
-  border-radius: 10px;
-  border: 1px solid var(--main-content-color);
+  font-style: italic; 
+  font-size: small; 
+  padding: 1rem;
 }
 
 @media (max-width: 800px) {
@@ -341,36 +287,36 @@ iframe {
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
+    gap: .5rem;
   }
 
   .projectOne img {
     width: 100%;
     height: 100%;
-    margin-bottom:1rem;
   }
 
   .projectTwo {
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
+    gap: .5rem;
   }
 
   .projectTwo img {
     width: 100%;
     height: 100%;
-    margin-bottom:1rem;
   }
 
   .projectThree {
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
+    gap: .5rem;
   }
 
   .projectThree img {
     width: 100%;
     height: 100%;
-    margin-bottom:1rem;
   }
 
   .markLink a:link {
