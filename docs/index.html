@@ -13,140 +13,156 @@
 
 <body>
 
-  <!-- header start -->
-
   <div class="header">
-    <div style="display: inline-block; text-align: left;">
-      <p style="margin-bottom:.1rem; margin-top:0; padding:0;"><mark>Hello, my name is</mark></p>
-      <h1 style="margin-top:0; margin-bottom:0;">Greg Emmen</h1>
-    </div>
+    <p style="margin-bottom:.1rem; margin-top:0; padding:0;"><mark>Hello, my name is</mark></p>
+    <h1 style="margin-top:0; margin-bottom:0;">Greg Emmen</h1>
   </div>
 
-  <!-- header end -->
-
-  <!-- tab content start -->
   <div class="content">
 
-  <div class="tab">
-    <button class="tablinks" onclick="openSection(event, 'about_me')" id="tab1">about me</button>
-    <button class="tablinks" onclick="openSection(event, 'projects')" id="tab2">projects</button>
-    <button class="tablinks" onclick="openSection(event, 'bonus')" id="tab3">bonus</button>
-  </div>
+    <div class="tab">
+      <button class="tablinks" onclick="openSection(event, 'about_me')" id="tab1">about me</button>
+      <button class="tablinks" onclick="openSection(event, 'projects')" id="tab2">portfolio</button>
+      <button class="tablinks" onclick="openSection(event, 'bonus')" id="tab3">bonus</button>
+    </div>
 
-  <!-- "about me" section start -->
-
-  <div id="about_me" class="tabcontent">
-    <div class="about_me">
-      <div>
+    <div id="about_me" class="tabcontent">
+      <div class="about_me">
         <img src="https://github.com/G-Emmen/G-Emmen.github.io/blob/main/docs/assets/img/ProfilePic.jpg?raw=true" alt="Greg Emmen - Profile Pic">
-      </div>
-      <div>
         <p style="margin-top:0;">
            Welcome to my personal webpage. I am a software and controls engineer working in the automotive industry. I have a passion for learning, creating, and houseplants.<br> <br> My skillset is with automotive software development. I am expanding my capabilities into data science and machine learning. For examples of work that I've done, and a showcase of my skills, check out the projects tab.
         </p>
       </div>
-    </div>
 
-    <hr>
+      <hr>
 
-    <div class="skillAndContact">
-      <div class="contact">
-        <h2>Contact Links</h2>
-          <p><mark class="markLink"><a href="https://github.com/G-Emmen/G-Emmen.github.io/raw/main/docs/assets/pdf/Greg_Emmen_Resume.pdf" target="_blank">Resume PDF</a></mark></p>
+      <div class="skillAndContact">
+        <div class="contact">
+          <h2>Contact Links</h2>
+          <p><mark class="markLink"><a href="./assets/pdf/GE_Resume.pdf" target="_blank">Resume PDF</a></mark></p>
           <p><mark class="markLink"><a href="mailto:greg.emmen@gmail.com">greg.emmen@gmail.com</a></mark></p>
           <p><mark class="markLink"><a href="https://linkedin.com/in/gregemmen" target="_blank">linkedin.com/in/gregemmen</a></mark></p>
           <p><mark class="markLink"><a href="http://github.com/G-Emmen" target="_blank">github.com/G-Emmen</a></mark></p>
+        </div>
+        <div class="skill">
+          <h2>Skills Snapshot</h2>
+          <p><mark>MATLAB</mark> <mark>Simulink</mark> <mark>C++</mark> <mark>Python</mark></p>
+          <p><mark>agile development</mark> <mark>version control</mark></p>
+          <p><mark>communication</mark> <mark>collaboration</mark></p>
+          <p><mark>problem-solving</mark> <mark>creativity</mark></p>
+        </div>
       </div>
-      <div class="skill">
-        <h2>Skills Snapshot</h2>
-        <p><mark>MATLAB</mark> <mark>Simulink</mark> <mark>C++</mark> <mark>Python</mark></p>
-        <p><mark>agile development</mark> <mark>version control</mark></p>
-        <p><mark>communication</mark> <mark>collaboration</mark></p>
-        <p><mark>problem-solving</mark> <mark>creativity</mark></p>
-      </div>
+
+      <hr>
+
+      <p class="quote">"A person who never made a mistake never tried anything new."<br>-Albert Einstein</p>
+
     </div>
 
-    <hr>
-
-    <p style="text-align: center; font-style: italic; font-size: small; padding: 1rem">"A person who never made a mistake never tried anything new."<br>-Albert Einstein</p>
-
-  </div>
-
-  <!-- "about me" section end -->
-    
-  <!-- "portfolio" section start -->
-
-  <div id="projects" class="tabcontent">
-    <div class="portfolio">
+    <div id="projects" class="tabcontent">
       <div class="project">
         <h2>Bank Churn Classification</h2>
-        <div class="projectOne">
-
-          <div>
-            <img src="https://www.kaggle.com/competitions/65711/images/header" alt="Kaggle S4E1 Competition Pic">
-          </div>
-          <div>
-            Winter 2024 Personal Project<br><mark class="markSkill">Python</mark> <mark class="markSkill">Jupyter Notebooks</mark><br><br>The best way to learn data science and machine learning is by jumping in and completing actual projects. To faciliate this, I entered into the latest Kaggle playground series competition. <br><br>The S4E1 playground series project asks competitors to build a model that can predict banking customer churn given a variety of input characteristics. Our goal is to analyze a training dataset, highlight any correlations, then determine the optimal modeling method for predicting if a customer will leave the bank. Once a model is built, it can be applied to a test dataset to generate the probability of any given customer leaving the bank. <br><br>With this project, I focused on developing my understanding of data science techniques and methodology. Any programming was completed using Jupyter Notebooks and Python. <br><br><mark class="markLink"><a href="./binary-classification-for-bank-churn-ge-notebook.html" target="_blank">Read the <i>Bank Churn Classification</i> report here.</a></mark>
-          </div>
+        <p style="text-align:center; margin-bottom:1rem; margin-top:0; padding:0;">
+          Winter 2024 Personal Project<br><mark class="markSkill">Python</mark> <mark class="markSkill">Jupyter Notebooks</mark>
+        </p>
+        <div>
+          <img src="https://www.kaggle.com/competitions/65711/images/header" alt="Kaggle S4E1 Competition Pic">
+          <p style="margin-top:1rem">
+            The best way to learn data science and machine learning is by jumping in and completing actual projects. Supporting this initiaitve, I entered into the latest Kaggle playground series competition. <br><br>The S4E1 playground series project asks competitors to build a model that can predict banking customer churn given a variety of input characteristics. Our goal is to analyze a training dataset, highlight any correlations, then determine the optimal modeling method for predicting if a customer will leave the bank. Once a model is built, it can be applied to a test dataset to generate the probability of any given customer leaving the bank. <br><br>With this project, I focused on developing my understanding of data science techniques and methodology. Any programming was completed using Jupyter Notebooks and Python.
+          </p>
         </div>
+        <p style="text-align: center;">
+          <mark class="markLink"><a href="./binary-classification-for-bank-churn-ge-notebook.html" target="_blank">Read the <i>Bank Churn Classification</i> report here.</a></mark>
+        </p>
       </div>
 
       <hr>
 
       <div class="project">
         <h2>Regenerative Braking Control Method</h2>
-        <div class="projectTwo">
-          <div>
-            <img src="./assets/img/regen_braking.png" alt="Regen Braking Simulink Model">
-          </div>
-          <div>
-            Fall 2021 Term Project<br><mark class="markSkill">MATLAB/Simulink</mark><br><br>Brushless DC motors are commonly found in automotive applications. These motors require a controlled three-phase current to operate. This control is generally implemented by use of a six-switch inverter. Depending on how you control each of the switches in an inverter, you can generate braking torque and recover energy (regenerative braking). This feature is necessary for hybrid electric vehicles to optimize energy consumption. <br><br>In this term project, I focused on analysing a six-switch inverter control strategy that could be used for regenerative braking. To accomplish this, a simplified vehicle energy model was built in MATLAB Simulink with Simscape electrical components.<br><br><mark class="markLink"><a href="./assets/pdf/RegenBrake.pdf" target="_blank">Read the <i>Regenerative Braking</i> report here.</a></mark>
-          </div>
+        <p style="text-align:center; margin-bottom:1rem; margin-top:0; padding:0;">
+          Fall 2021 Term Project<br><mark class="markSkill">MATLAB/Simulink</mark>
+        </p>
+        <div>
+          <img src="./assets/img/regen_braking.png" alt="Regen Braking Simulink Model">
+          <p style="margin-top:1rem">
+            Brushless DC motors are commonly found in automotive applications. These motors require a controlled three-phase current to operate. This control is generally implemented by use of a six-switch inverter. Depending on how you control each of the switches in an inverter, you can generate braking torque and recover energy (regenerative braking). This feature is necessary for hybrid electric vehicles to optimize energy consumption. <br><br>In this term project, I focused on analysing a six-switch inverter control strategy that could be used for regenerative braking. To accomplish this, a simplified vehicle energy model was built in MATLAB Simulink with Simscape electrical components.
+          </p>
         </div>
+        <p style="text-align: center;">
+          <mark class="markLink"><a href="./assets/pdf/RegenBrake.pdf" target="_blank">Read the <i>Regenerative Braking</i> report here.</a></mark>
+        </p>
       </div>
 
       <hr>
 
       <div class="project">
         <h2>Satellite Attitude Control System</h2>
-        <div class="projectThree">
-
-          <div>
-            <img src="./assets/img/satellite_graphic.png" alt="Attitude Control Diagram">
-          </div>
-          <div>
-            Fall 2020 Term Project<br><mark class="markSkill">MATLAB/Simulink</mark> <mark class="markSkill">Control Theory</mark><br><br>This group project discusses the design of a satellite attitude control system. Attitude control is the method with which a satellite maintains orientation in space. This is accomplished using various kinds of actuators that can provide physical or inertial thrust. The report covers a variety of areas tied to control system analysis; including noise rejection, stability, open vs closed loop response, and Proportional-Integral-Derivative (PID) control. <br><br>A simplified system model was used to simulate our rigid satellite body. Once implemented in MATLAB/Simulink, it was possible to complete an array of analysis covering topics tied to advanced control theory.<br><br><mark class="markLink"><a href="./assets/pdf/SatelliteControl.pdf" target="_blank">Read the <i>Satellite Attitude Control</i> report here.</a></mark>
-          </div>
-          
+        <p style="text-align:center; margin-bottom:1rem; margin-top:0; padding:0;">
+          Fall 2020 Term Project<br><mark class="markSkill">MATLAB/Simulink</mark> <mark class="markSkill">Control Theory</mark>
+        </p>
+        <div>
+          <img src="./assets/img/satellite_graphic.png" alt="Attitude Control Diagram">
+          <p style="margin-top:1rem">
+            This group project discusses the design of a satellite attitude control system. Attitude control is the method with which a satellite maintains orientation in space. This is accomplished using various kinds of actuators that can provide physical or inertial thrust. The report covers a variety of areas tied to control system analysis; including noise rejection, stability, open vs closed loop response, and Proportional-Integral-Derivative (PID) control. <br><br>A simplified system model was used to simulate our rigid satellite body. Once implemented in MATLAB/Simulink, it was possible to complete an array of analysis covering topics tied to advanced control theory.
+          </p>          
         </div>
+        <p style="text-align: center;">
+          <mark class="markLink"><a href="./assets/pdf/SatelliteControl.pdf" target="_blank">Read the <i>Satellite Attitude Control</i> report here.</a></mark>
+        </p>
+      </div>
+    </div>
+
+    <div id="bonus" class="tabcontent">
+      <h2 style="text-align: center;">3D Printing</h2>
+        <div class="printWrap">
+          <div class="printProject">
+            <h3 style="text-align: center;margin-bottom:0;"><i>Silica Container</i></h3>
+            <img src="./assets/img/SilicaContainer.jpg">
+            <p>Built a simple cylindrical container with a matching screw cap. Lets air in, doesn't let silica gel pellets out.</p>
+            <p style="text-align: center;">
+              <mark class="markLink"><a href="https://www.printables.com/model/280575-silica-container-cylinder-w-screw-cap" target="_blank">Silica Container - Printables</a></mark>
+            </p>
+          </div>
+
+          <div class="printProject">
+            <h3 style="text-align: center;margin-bottom:0;"><i>Bike-Attached Bottle Cage</i></h3>
+            <img src="./assets/img/BottleCage.jpg">
+            <p>Bottle cage designed to fit a 750ml Camelbak water bottle. Includes a channel for mounting bolt/washers and fits standard frame positioning on most bikes.</p>
+            <p style="text-align: center;">
+              <mark class="markLink"><a href="https://www.printables.com/model/125191-bottle-cage-fits-750ml-camelbak" target="_blank">Bottle Cage - Printables</a></mark>
+            </p>
+          </div>
+
+          <div class="printProject">
+            <h3 style="text-align: center;margin-bottom:0;"><i>Dice Tower</i></h3>
+            <img src="./assets/img/DiceTower.jpg">
+            <p>Relatively simple dice tower. Rolls dice well, keeps everything contained, looks pretty neat.</p>
+            <p style="text-align: center;">
+              <mark class="markLink"><a href="https://www.printables.com/model/71572-simple-dice-tower" target="_blank">Dice Tower - Printables</a></mark>
+            </p>
+          </div>
+
+          <div class="printProject">
+            <h3 style="text-align: center;margin-bottom:0;"><i>Very large D20</i></h3>
+            <img src="./assets/img/VeryLargeD20.jpg">
+            <p>Modeled a large d20 to print just for fun. Actually works quite well. I would avoid rolling it on any surface you don't want to damage (roll it on carpet).</p>
+            <p style="text-align: center;">
+              <mark class="markLink"><a href="https://www.printables.com/model/71574-very-large-d20" target="_blank">Very Large D20 - Printables</a></mark>
+            </p>
+          </div>
+        </div>
+
+      <hr>
+
+      <div class="otto_adventure">
+        <button>
+          <a onclick="window.open('otto_adventure.html')"><img src="./assets/img/running-dog-silhouette.png"><br><i>Otto's Grand Adventure</i></a>
+        </button>
+        <p>Enjoy a little choose-your-own-adventure game that I built.<br>Just for fun!</p>
       </div>
     </div>
   </div>
-
-  <!-- "portfolio" section end -->
-
-  <!-- "bonus" section start -->
-
-  <div id="bonus" class="tabcontent">
-    <div class="bonus">
-      <p style="text-align:center;">Enjoy a little choose-your-own-adventure game built into my site. Just for fun!<br>(works best on desktop browsers)</p>
-      <iframe src="otto_adventure.html" loading="lazy"></iframe>
-    </div>
-  </div>
-
-  <!-- "bonus" section end -->
-
-  </div>
-
-  <!-- tab content end -->
-
-  <!-- footer content start -->
-
-  <div>
-    <br><br><br><br>
-  </div>
-
-  <!-- footer content end -->
 
 </body>
 </html>
