@@ -21,6 +21,18 @@ body {
   color: var(--main-content-color);
 }
 
+.themeOne {
+  --main-bg-color: #C8D0CA;
+}
+
+.themeTwo {
+  --main-bg-color: #60B0B0;
+}
+
+.themeThree {
+  --main-bg-color: #414A4C;
+}
+
 mark {
   background-color: var(--highlight-color_one);
   border-radius: 5px;
@@ -62,16 +74,49 @@ hr {
   border-width: 0;
 }
 
-iframe {
-  display: block;
-  margin: auto;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
-  text-align: center;
-  height: 600px;
-  width: 600px;
-  border-radius: 10px;
-  border: 1px solid var(--main-content-color);
+.colorSchemeButtonOne {
+  background-color: #C8D0CA;
+  border-radius: 5px;
+  border: 1px solid;
+  height: 45px;
+  width: 85px;
+  transition: .5s ease-in-out;
+}
+
+.colorSchemeButtonOne:hover {
+  cursor: pointer;
+  transition: .5s ease-in-out;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.colorSchemeButtonTwo {
+  background-color: #60B0B0;
+  border-radius: 5px;
+  border: 1px solid;
+  height: 45px;
+  width: 85px;
+  transition: .5s ease-in-out;
+}
+
+.colorSchemeButtonTwo:hover {
+  cursor: pointer;
+  transition: .5s ease-in-out;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.colorSchemeButtonThree {
+  background-color: #414A4C;
+  border-radius: 5px;
+  border: 1px solid;
+  height: 45px;
+  width: 85px;
+  transition: .5s ease-in-out;
+}
+
+.colorSchemeButtonThree:hover {
+  cursor: pointer;
+  transition: .5s ease-in-out;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .markLink a:link {
@@ -116,7 +161,7 @@ iframe {
   display: block;
   padding: 1rem;
   border-radius: 10px;
-  border: 0px solid var(--main-content-color);
+  border: 1px solid var(--main-content-color);
   background-color: var(--main-fg-color);
   margin: auto;
   margin-top: 2rem;
@@ -181,6 +226,13 @@ iframe {
   border-radius: 5px;
   padding: .2rem;
   margin: .2rem;
+}
+
+.colorScheme {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem;
 }
 
 .project img{
@@ -252,14 +304,17 @@ iframe {
 .otto_adventure button {
   background-color: var(--secondary-fg-color);
   border: 1px solid var(--main-content-color);
+  color: var(--main-content-color);
   border-radius: 10px;
   padding: .5rem;
+  transition: .5s ease-in-out;
 }
 
 .otto_adventure button:hover {
-  background-color: var(--main-bg-color);
   cursor: pointer;
   text-decoration: underline var(--main-content-color);
+  transition: .5s ease-in-out;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .otto_adventure img {
@@ -283,6 +338,8 @@ iframe {
 .tab button {
   background-color: var(--secondary-fg-color);
   border: 0px solid var(--main-content-color);
+  border-bottom: 1px solid var(--main-content-color);
+  border-top: 1px solid var(--main-content-color);
   outline: none;
   cursor: pointer;
   padding: 5px 5px;
@@ -295,13 +352,12 @@ iframe {
 
 .tab button:hover {
   text-decoration: underline;
-  border-bottom: 0px solid var(--main-content-color);
 }
 
 .tab button.active {
   text-decoration-color: var(--main-fg-color);
   background-color: var(--main-fg-color);
-  border: 0px solid var(--main-content-color);
+  border: 1px solid var(--main-content-color);
   border-bottom: 0px;
   padding-bottom: 5px;
 }
@@ -309,7 +365,7 @@ iframe {
 .tabcontent {
   display: none;
   padding: 1rem 1rem;
-  border: 0px solid var(--main-content-color);
+  border: 1px solid var(--main-content-color);
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   margin-top:-1px;

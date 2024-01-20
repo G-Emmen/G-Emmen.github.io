@@ -11,7 +11,6 @@ function openSection(evt, sectionName) {
   document.getElementById(sectionName).style.display = "block";
   evt.currentTarget.className += " active";
 
-  sessionStorage.clear()
   sessionStorage.setItem("activeTab",sectionName)
 }
 
@@ -33,4 +32,46 @@ document.addEventListener("DOMContentLoaded", function(){
   else {
     document.getElementById("tab1").click()
   }
+
+  var currTheme = sessionStorage.getItem("theme");
+  if (currTheme === "one") {
+    document.getElementById("themeOne").click();
+  }
+
+  else if (currTheme === "two") {
+    document.getElementById("themeTwo").click();
+  }
+
+  else if (currTheme === "three") {
+    document.getElementById("themeThree").click();
+  }
+
+  else {
+    document.getElementById("themeOne").click()
+  }
+
 });
+
+function themeOne() {
+  var element = document.body;
+  element.classList.remove("themeOne", "themeTwo", "themeThree")
+  element.classList.toggle("themeOne");
+
+  sessionStorage.setItem("theme","one")
+}
+
+function themeTwo() {
+  var element = document.body;
+  element.classList.remove("themeOne", "themeTwo", "themeThree")
+  element.classList.toggle("themeTwo");
+
+  sessionStorage.setItem("theme","two")
+}
+
+function themeThree() {
+  var element = document.body;
+  element.classList.remove("themeOne", "themeTwo", "themeThree")
+  element.classList.toggle("themeThree");
+
+  sessionStorage.setItem("theme","three")
+}

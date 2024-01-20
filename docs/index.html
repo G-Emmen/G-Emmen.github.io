@@ -21,9 +21,9 @@
   <div class="content">
 
     <div class="tab">
-      <button class="tablinks" onclick="openSection(event, 'about_me')" id="tab1">about me</button>
+      <button class="tablinks" onclick="openSection(event, 'about_me')" id="tab1" style="border-top-left-radius:10px; border-left: 1px solid var(--main-content-color);">about me</button>
       <button class="tablinks" onclick="openSection(event, 'projects')" id="tab2">portfolio</button>
-      <button class="tablinks" onclick="openSection(event, 'bonus')" id="tab3">bonus</button>
+      <button class="tablinks" onclick="openSection(event, 'bonus')" id="tab3" style="border-top-right-radius: 10px; border-right: 1px solid var(--main-content-color);">bonus</button>
     </div>
 
     <div id="about_me" class="tabcontent">
@@ -115,6 +115,7 @@
 
     <div id="bonus" class="tabcontent">
       <h2 style="text-align: center;">3D Printing</h2>
+      <p style="text-align: center; margin-bottom: 2rem;">Running a CR6SE printer with some modifications. All of the prints shown here are modeled by myself using AutoDesk Fusion360. Check out the Printables links for more information.</p>
         <div class="printWrap">
           <div class="printProject">
             <h3 style="text-align: center;margin-bottom:0;"><i>Silica Container</i></h3>
@@ -151,6 +152,16 @@
               <mark class="markLink"><a href="https://www.printables.com/model/71574-very-large-d20" target="_blank">Very Large D20 - Printables</a></mark>
             </p>
           </div>
+        </div>
+
+      <hr>
+
+        <h2 style="text-align: center;">Background Color Selection</h2>
+        <p style="text-align: center;">I've been teaching myself HTML and CSS lately, so here's a little feature to change the background color of the webpage. It'll remember your background color on page reload, but will clear if you close the tab (same as remembering what tab you are on).</p>
+        <div class="colorScheme">
+          <button class="colorSchemeButtonOne" onclick="themeOne()" id="themeOne"></button>
+          <button class="colorSchemeButtonTwo" onclick="themeTwo()" id="themeTwo"></button>
+          <button class="colorSchemeButtonThree" onclick="themeThree()" id="themeThree"></button>
         </div>
 
       <hr>
