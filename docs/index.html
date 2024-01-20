@@ -16,14 +16,19 @@
   <div class="header">
     <p style="margin-bottom:.1rem; margin-top:0; padding:0;"><mark>Hello, my name is</mark></p>
     <h1 style="margin-top:0; margin-bottom:0;">Greg Emmen</h1>
+    <div class="colorScheme">
+      <button class="colorSchemeButton" onclick="themeOne()" id="themeOne"><p>theme 1</p></button>
+      <button class="colorSchemeButton" onclick="themeTwo()" id="themeTwo"><p>theme 2</p></button>
+      <button class="colorSchemeButton" onclick="themeThree()" id="themeThree"><p>theme 3</p></button>
+    </div>
   </div>
 
   <div class="content">
 
     <div class="tab">
-      <button class="tablinks" onclick="openSection(event, 'about_me')" id="tab1">about me</button>
+      <button class="tablinks" onclick="openSection(event, 'about_me')" id="tab1" style="border-top-left-radius:10px; border-left: 1px solid var(--main-content-color);">about me</button>
       <button class="tablinks" onclick="openSection(event, 'projects')" id="tab2">portfolio</button>
-      <button class="tablinks" onclick="openSection(event, 'bonus')" id="tab3">bonus</button>
+      <button class="tablinks" onclick="openSection(event, 'bonus')" id="tab3" style="border-top-right-radius: 10px; border-right: 1px solid var(--main-content-color);">bonus</button>
     </div>
 
     <div id="about_me" class="tabcontent">

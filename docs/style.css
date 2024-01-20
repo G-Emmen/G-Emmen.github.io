@@ -21,6 +21,36 @@ body {
   color: var(--main-content-color);
 }
 
+.themeOne {
+  transition: 1s ease-in-out;
+  --main-bg-color: #C8D0CA;
+  --main-fg-color: #ECEFED;
+  --secondary-fg-color: #D9DFDA;
+  --main-content-color: #002B36;
+  --highlight-color_one: #B2D69A; /*green*/
+  --highlight-color_two: #A3C7E1; /*blue*/
+}
+
+.themeTwo {
+  transition: 1s ease-in-out;
+  --main-bg-color: #B9D9EB;
+  --main-fg-color: #FFFFFF;
+  --secondary-fg-color: #DCECF5;
+  --main-content-color: #000000;
+  --highlight-color_one: #87CEFA; /*blue*/
+  --highlight-color_two: #FF7F7F; /*red*/
+}
+
+.themeThree {
+  transition: 1s ease-in-out;
+  --main-bg-color: #141414;
+  --main-fg-color: #E0E0E0;
+  --secondary-fg-color: #C0C0C0;
+  --main-content-color: #2F3637;
+  --highlight-color_one: #EE82EE; /*purple*/
+  --highlight-color_two: #FCF75E; /*green*/
+}
+
 mark {
   background-color: var(--highlight-color_one);
   border-radius: 5px;
@@ -116,7 +146,7 @@ iframe {
   display: block;
   padding: 1rem;
   border-radius: 10px;
-  border: 0px solid var(--main-content-color);
+  border: 1px solid var(--main-content-color);
   background-color: var(--main-fg-color);
   margin: auto;
   margin-top: 2rem;
@@ -181,6 +211,13 @@ iframe {
   border-radius: 5px;
   padding: .2rem;
   margin: .2rem;
+}
+
+.colorScheme {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem;
 }
 
 .project img{
@@ -252,14 +289,17 @@ iframe {
 .otto_adventure button {
   background-color: var(--secondary-fg-color);
   border: 1px solid var(--main-content-color);
+  color: var(--main-content-color);
   border-radius: 10px;
   padding: .5rem;
+  transition: .5s ease-in-out;
 }
 
 .otto_adventure button:hover {
-  background-color: var(--main-bg-color);
+  background-color: var(--highlight-color_two);
   cursor: pointer;
   text-decoration: underline var(--main-content-color);
+  transition: .5s ease-in-out;
 }
 
 .otto_adventure img {
@@ -283,6 +323,8 @@ iframe {
 .tab button {
   background-color: var(--secondary-fg-color);
   border: 0px solid var(--main-content-color);
+  border-bottom: 1px solid var(--main-content-color);
+  border-top: 1px solid var(--main-content-color);
   outline: none;
   cursor: pointer;
   padding: 5px 5px;
@@ -295,13 +337,12 @@ iframe {
 
 .tab button:hover {
   text-decoration: underline;
-  border-bottom: 0px solid var(--main-content-color);
 }
 
 .tab button.active {
   text-decoration-color: var(--main-fg-color);
   background-color: var(--main-fg-color);
-  border: 0px solid var(--main-content-color);
+  border: 1px solid var(--main-content-color);
   border-bottom: 0px;
   padding-bottom: 5px;
 }
@@ -309,7 +350,7 @@ iframe {
 .tabcontent {
   display: none;
   padding: 1rem 1rem;
-  border: 0px solid var(--main-content-color);
+  border: 1px solid var(--main-content-color);
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   margin-top:-1px;
