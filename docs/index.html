@@ -22,7 +22,7 @@
 
     <div class="tab">
       <button class="tablinks" onclick="openSection(event, 'about_me')" id="tab1">about me</button>
-      <button class="tablinks" onclick="openSection(event, 'projects')" id="tab2">projects</button>
+      <button class="tablinks" onclick="openSection(event, 'projects')" id="tab2">portfolio</button>
       <button class="tablinks" onclick="openSection(event, 'bonus')" id="tab3">bonus</button>
     </div>
 
@@ -62,7 +62,7 @@
     <div id="projects" class="tabcontent">
       <div class="project">
         <h2>Bank Churn Classification</h2>
-        <p style="text-align:center; margin-bottom:1rem; margin-top:0;">
+        <p style="text-align:center; margin-bottom:1rem; margin-top:0; padding:0;">
           Winter 2024 Personal Project<br><mark class="markSkill">Python</mark> <mark class="markSkill">Jupyter Notebooks</mark>
         </p>
         <div>
@@ -80,7 +80,7 @@
 
       <div class="project">
         <h2>Regenerative Braking Control Method</h2>
-        <p style="text-align:center; margin-bottom:1rem; margin-top:0;">
+        <p style="text-align:center; margin-bottom:1rem; margin-top:0; padding:0;">
           Fall 2021 Term Project<br><mark class="markSkill">MATLAB/Simulink</mark>
         </p>
         <div>
@@ -98,7 +98,7 @@
 
       <div class="project">
         <h2>Satellite Attitude Control System</h2>
-        <p style="text-align:center; margin-bottom:1rem; margin-top:0;">
+        <p style="text-align:center; margin-bottom:1rem; margin-top:0; padding:0;">
           Fall 2020 Term Project<br><mark class="markSkill">MATLAB/Simulink</mark> <mark class="markSkill">Control Theory</mark>
         </p>
         <div>
@@ -114,8 +114,53 @@
     </div>
 
     <div id="bonus" class="tabcontent">
-      <p style="text-align:center;">Enjoy a little choose-your-own-adventure game built into my site. Just for fun!<br>(works best on desktop browsers)</p>
-      <iframe src="otto_adventure.html"></iframe>
+      <h2 style="text-align: center;">3D Printing</h2>
+        <div class="printWrap">
+          <div class="printProject">
+            <h3 style="text-align: center;margin-bottom:0;"><i>Silica Container</i></h3>
+            <img src="./assets/img/SilicaContainer.jpg">
+            <p>Built a simple cylindrical container with a matching screw cap. Lets air in, doesn't let silica gel pellets out.</p>
+            <p style="text-align: center;">
+              <mark class="markLink"><a href="https://www.printables.com/model/280575-silica-container-cylinder-w-screw-cap" target="_blank">Silica Container - Printables</a></mark>
+            </p>
+          </div>
+
+          <div class="printProject">
+            <h3 style="text-align: center;margin-bottom:0;"><i>Bike-Attached Bottle Cage</i></h3>
+            <img src="./assets/img/BottleCage.jpg">
+            <p>Bottle cage designed to fit a 750ml Camelbak water bottle. Includes a channel for mounting bolt/washers and fits standard frame positioning on most bikes.</p>
+            <p style="text-align: center;">
+              <mark class="markLink"><a href="https://www.printables.com/model/125191-bottle-cage-fits-750ml-camelbak" target="_blank">Bottle Cage - Printables</a></mark>
+            </p>
+          </div>
+
+          <div class="printProject">
+            <h3 style="text-align: center;margin-bottom:0;"><i>Dice Tower</i></h3>
+            <img src="./assets/img/DiceTower.jpg">
+            <p>Relatively simple dice tower. Rolls dice well, keeps everything contained, looks pretty neat.</p>
+            <p style="text-align: center;">
+              <mark class="markLink"><a href="https://www.printables.com/model/71572-simple-dice-tower" target="_blank">Dice Tower - Printables</a></mark>
+            </p>
+          </div>
+
+          <div class="printProject">
+            <h3 style="text-align: center;margin-bottom:0;"><i>Very large D20</i></h3>
+            <img src="./assets/img/VeryLargeD20.jpg">
+            <p>Modeled a large d20 to print just for fun. Actually works quite well. I would avoid rolling it on any surface you don't want to damage (roll it on carpet).</p>
+            <p style="text-align: center;">
+              <mark class="markLink"><a href="https://www.printables.com/model/71574-very-large-d20" target="_blank">Very Large D20 - Printables</a></mark>
+            </p>
+          </div>
+        </div>
+
+      <hr>
+
+      <div class="otto_adventure">
+        <button>
+          <a onclick="window.open('otto_adventure.html')"><img src="./assets/img/running-dog-silhouette.png"><br><i>Otto's Grand Adventure</i></a>
+        </button>
+        <p>Enjoy a little choose-your-own-adventure game that I built.<br>Just for fun!</p>
+      </div>
     </div>
   </div>
 
