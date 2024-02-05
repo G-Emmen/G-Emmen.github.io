@@ -37,7 +37,6 @@ mark {
   background-color: var(--highlight-color_one);
   border-radius: 5px;
   padding: .2rem;
-  margin: .2rem;
   color: var(--main-content-color);
 }
 
