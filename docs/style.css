@@ -4,12 +4,13 @@ html {
 }
 
 body {
-  --main-bg-color: #C8D0CA;
-  --main-fg-color: #ECEFED;
-  --secondary-fg-color: #D9DFDA;
+  --main-bg-color: #ffffff;
+  --main-fg-color: #F6F7F6;
+  --secondary-fg-color: #ECEFED;
   --main-content-color: #002B36;
   --highlight-color_one: #B2D69A; /*green*/
   --highlight-color_two: #A3C7E1; /*blue*/
+  --border-color: #000000;
 
   margin: auto;
   padding: 10px;
@@ -57,53 +58,8 @@ ul {
 
 hr {
   height:1px;
-  background-color: var(--main-content-color);
+  background-color: var(--border-color);
   border-width: 0;
-}
-
-.colorSchemeButtonOne {
-  background-color: #C8D0CA;
-  border-radius: 5px;
-  border: 1px solid;
-  height: 45px;
-  width: 85px;
-  transition: .5s ease-in-out;
-}
-
-.colorSchemeButtonOne:hover {
-  cursor: pointer;
-  transition: .5s ease-in-out;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-}
-
-.colorSchemeButtonTwo {
-  background-color: #60B0B0;
-  border-radius: 5px;
-  border: 1px solid;
-  height: 45px;
-  width: 85px;
-  transition: .5s ease-in-out;
-}
-
-.colorSchemeButtonTwo:hover {
-  cursor: pointer;
-  transition: .5s ease-in-out;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-}
-
-.colorSchemeButtonThree {
-  background-color: #414A4C;
-  border-radius: 5px;
-  border: 1px solid;
-  height: 45px;
-  width: 85px;
-  transition: .5s ease-in-out;
-}
-
-.colorSchemeButtonThree:hover {
-  cursor: pointer;
-  transition: .5s ease-in-out;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .markLink a:link {
@@ -148,13 +104,15 @@ hr {
   display: block;
   padding: 1rem;
   border-radius: 10px;
-  border: 1px solid var(--main-content-color);
+  border: 1px solid var(--border-color);
   background-color: var(--main-fg-color);
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 3rem;
   width: fit-content;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.2);
 }
 
 .about_me {
@@ -167,7 +125,7 @@ hr {
 
 .about_me img {
   border-radius: 5px;
-  border: 1px solid var(--main-content-color);
+  border: 1px solid var(--border-color);
 }
 
 .skillAndContact {
@@ -224,7 +182,7 @@ hr {
 
 .project img{
   border-radius: 5px;
-  border: 1px solid var(--main-content-color);
+  border: 1px solid var(--border-color);
   max-height: 200px;
   max-width: 358px;
   width: auto;
@@ -248,7 +206,7 @@ hr {
 
 .printWrap img {
   border-radius: 5px;
-  border: 1px solid var(--main-content-color);
+  border: 1px solid var(--border-color);
   max-height: 200px;
   max-width: 200px;
   width: auto;
@@ -272,7 +230,7 @@ hr {
   grid-template-columns: 1fr;
   place-items: center;
   border-radius: 5px;
-  border: 1px solid var(--main-content-color);
+  border: 1px solid var(--border-color);
   background-color: var(--secondary-fg-color);
   width: 90%;
   height: 400px;
@@ -290,7 +248,7 @@ hr {
 
 .otto_adventure button {
   background-color: var(--secondary-fg-color);
-  border: 1px solid var(--main-content-color);
+  border: 1px solid var(--border-color);
   color: var(--main-content-color);
   border-radius: 10px;
   padding: .5rem;
@@ -301,7 +259,9 @@ hr {
   cursor: pointer;
   text-decoration: underline var(--main-content-color);
   transition: .5s ease-in-out;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.2);
 }
 
 .otto_adventure img {
@@ -324,9 +284,9 @@ hr {
 
 .tab button {
   background-color: var(--secondary-fg-color);
-  border: 0px solid var(--main-content-color);
-  border-bottom: 1px solid var(--main-content-color);
-  border-top: 1px solid var(--main-content-color);
+  border: 0px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
   outline: none;
   cursor: pointer;
   padding: 5px 5px;
@@ -344,7 +304,7 @@ hr {
 .tab button.active {
   text-decoration-color: var(--main-fg-color);
   background-color: var(--main-fg-color);
-  border: 1px solid var(--main-content-color);
+  border: 1px solid var(--border-color);
   border-bottom: 0px;
   padding-bottom: 5px;
 }
@@ -352,7 +312,7 @@ hr {
 .tabcontent {
   display: none;
   padding: 1rem 1rem;
-  border: 1px solid var(--main-content-color);
+  border: 1px solid var(--border-color);
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   margin-top:-1px;
@@ -361,7 +321,9 @@ hr {
 
 .content {
   border-radius: 10px;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.2);
   margin-bottom: 4rem
 }
 
