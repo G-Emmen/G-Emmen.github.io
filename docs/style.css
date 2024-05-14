@@ -184,7 +184,7 @@ hr {
   border-radius: 5px;
   border: 1px solid var(--border-color);
   max-height: 300px;
-  max-width: 300px;
+  max-width: 258px;
   width: auto;
   height: auto;
   float: left;
@@ -334,6 +334,12 @@ hr {
   padding: 1rem;
 }
 
+.portfolio_base {
+  display:grid; 
+  grid-template-columns:1fr 2fr; 
+  align-items:center;
+}
+
 @media (max-width: 800px) {
   .about_me {
     grid-template-columns: 1fr;
@@ -357,10 +363,7 @@ hr {
   }
 
   .project img {
-    width: 100%;
-    height: 100%;
     margin: auto;
-    margin-bottom: 1rem;
   }
 
   .project {
@@ -395,7 +398,7 @@ hr {
     text-decoration: underline;
   }
 
-  .otto_adventure button {
-    text-decoration: underline var(--main-content-color);
+  .portfolio_base {
+    grid-template-columns:1fr; 
   }
 }
