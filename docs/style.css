@@ -62,14 +62,6 @@ hr {
   border-width: 0;
 }
 
-.dashed_hr {
-  height:1px;
-  background-color: var(--main-fg-color);
-  border-width: 0;
-  border-top:1px dashed var(--border-color);
-  margin-top:0.5rem;
-}
-
 .markLink a:link {
   color:var(--main-content-color);
   text-decoration: none;
@@ -212,17 +204,6 @@ hr {
   text-align: center;
 }
 
-.printWrap img {
-  border-radius: 5px;
-  border: 1px solid var(--border-color);
-  max-height: 200px;
-  max-width: 200px;
-  width: auto;
-  height: auto;
-  margin: 1rem;
-  margin-bottom: 0;
-}
-
 .tab {
   overflow: hidden;
   display: grid;
@@ -320,16 +301,6 @@ hr {
     display: block;
     place-items: center;
     gap: .5rem;
-  }
-
-  .printWrap {
-    grid-template-columns: 1fr;
-    margin: 1rem;
-    margin-top: 0;
-  }
-
-  .printProject {
-    height: 450px;
   }
 
   .markLink a:link {
