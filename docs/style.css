@@ -62,6 +62,14 @@ hr {
   border-width: 0;
 }
 
+.dashed_hr {
+  height:1px;
+  background-color: var(--main-fg-color);
+  border-width: 0;
+  border-top:1px dashed var(--border-color);
+  margin-top:0.5rem;
+}
+
 .markLink a:link {
   color:var(--main-content-color);
   text-decoration: none;
@@ -194,8 +202,7 @@ hr {
 }
 
 .project {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: block;
   padding: 1rem;
   text-align: left;
 }
@@ -214,27 +221,6 @@ hr {
   height: auto;
   margin: 1rem;
   margin-bottom: 0;
-}
-
-.printWrap {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 1rem;
-  row-gap: 2rem;
-  place-items: center;
-  margin: 2rem;
-  margin-top: 0;
-}
-
-.printProject {
-  display: grid;
-  grid-template-columns: 1fr;
-  place-items: center;
-  border-radius: 5px;
-  border: 1px solid var(--border-color);
-  background-color: var(--secondary-fg-color);
-  width: 90%;
-  height: 400px;
 }
 
 .tab {
@@ -331,8 +317,7 @@ hr {
   }
 
   .project {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: block;
     place-items: center;
     gap: .5rem;
   }
