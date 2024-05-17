@@ -57,9 +57,10 @@ ul {
 }
 
 hr {
-  height:1px;
-  background-color: var(--border-color);
-  border-width: 0;
+  background-color: var(--main-fg-color);
+  border: none;
+  border-top: 1px var(--border-color) dashed;
+
 }
 
 .markLink a:link {
