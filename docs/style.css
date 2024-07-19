@@ -22,6 +22,25 @@ body {
   color: var(--main-content-color);
 }
 
+.animate {
+  animation-duration: 1s;
+  animation-name: animate-fade;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes animate-fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.delay-1 {
+  animation-delay: 0.5s;
+}
+.delay-2 {
+  animation-delay: 1s;
+}
+
 mark {
   background-color: var(--highlight-color_one);
   border-radius: 5px;
