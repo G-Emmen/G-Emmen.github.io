@@ -13,7 +13,7 @@ body {
   --border-color: #000000;
 
   margin: auto;
-  padding: 10px;
+  padding: 21px;
   font-family: 'Roboto', sans-serif;
   letter-spacing: .05rem;
   max-width: 800px;
@@ -23,9 +23,8 @@ body {
 }
 
 .animate {
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-name: animate-fade;
-  animation-delay: 0.5s;
   animation-fill-mode: backwards;
 }
 
@@ -35,10 +34,10 @@ body {
 }
 
 .delay-1 {
-  animation-delay: 0.5s;
+  animation-delay: .5s;
 }
 .delay-2 {
-  animation-delay: 1s;
+  animation-delay: 1.5s;
 }
 
 mark {
@@ -167,6 +166,7 @@ hr {
 
 .skill p {
   margin-top: 0;
+  padding: 0;
 }
 
 .contact {
