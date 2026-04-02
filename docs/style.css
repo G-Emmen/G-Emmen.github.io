@@ -10,6 +10,7 @@ body {
   --main-content-color: #002B36;
   --highlight-color_one: #B2D69A; /*green*/
   --highlight-color_two: #A3C7E1; /*blue*/
+  --highlight-color_three: #F6F7F6; /*grey*/
   --border-color: #000000;
 
   margin: auto;
@@ -43,7 +44,14 @@ body {
 mark {
   background-color: var(--highlight-color_one);
   border-radius: 5px;
-  padding: .2rem;
+  margin-left: .4rem;
+  margin-right: .4rem;
+  margin-top: .3rem;
+  margin-bottom: .3rem;
+  padding-left: .2rem;
+  padding-right: .2rem;
+  padding-top: 0;
+  padding-bottom: 0;
   color: var(--main-content-color);
 }
 
@@ -103,6 +111,10 @@ hr {
 .markLink {
   background-color: var(--highlight-color_two);
   border-radius: 5px;
+  margin-left: .4rem;
+  margin-right: .4rem;
+  margin-top: .3rem;
+  margin-bottom: .3rem;
   padding-left: .2rem;
   padding-right: .2rem;
   padding-top: 0;
@@ -112,7 +124,23 @@ hr {
 .markSkill {
   background-color: var(--highlight-color_one);
   border-radius: 5px;
-  margin: 0;
+  margin-left: .4rem;
+  margin-right: .4rem;
+  margin-top: .3rem;
+  margin-bottom: .3rem;
+  padding-left: .2rem;
+  padding-right: .2rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.marktab {
+  background-color: var(--highlight-color_three);
+  border-radius: 5px;
+  margin-left: .4rem;
+  margin-right: .4rem;
+  margin-top: .3rem;
+  margin-bottom: .3rem;
   padding-left: .2rem;
   padding-right: .2rem;
   padding-top: 0;
@@ -184,13 +212,6 @@ hr {
   text-align: left;
 }
 
-.contact mark {
-  background-color: var(--highlight-color_two);
-  border-radius: 5px;
-  padding: .2rem;
-  margin: .2rem;
-}
-
 .colorScheme {
   display: flex;
   justify-content: center;
@@ -251,7 +272,7 @@ hr {
 }
 
 .tab button.active {
-  text-decoration-color: var(--main-fg-color);
+  text-decoration-color: var(--highlight-color_three);
   background-color: var(--main-fg-color);
   border: 1px solid var(--border-color);
   border-bottom: 0px;
