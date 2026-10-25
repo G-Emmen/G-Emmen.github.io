@@ -212,6 +212,62 @@ hr {
   margin: 1rem;
   margin-bottom: .5rem;
   background-color: white;
+  cursor: zoom-in;
+}
+
+body.image-overlay-open {
+  overflow: hidden;
+}
+
+.image-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  background-color: rgba(220, 220, 220, .55);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
+.image-overlay[hidden] {
+  display: none;
+}
+
+.image-overlay-frame {
+  position: relative;
+  max-width: 80vw;
+  max-height: 80vh;
+}
+
+.image-overlay-content {
+  display: block;
+  max-width: 80vw;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  background-color: white;
+}
+
+.image-overlay-close {
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  background-color: var(--main-fg-color);
+  color: var(--main-content-color);
+  font: inherit;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
 }
 
 .project {
