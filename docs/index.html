@@ -7,26 +7,27 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet"> 
+  <script>
+    (function () {
+      var savedTheme = localStorage.getItem("theme");
+      var systemPrefersLight = window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: light)").matches;
+      document.documentElement.dataset.theme =
+        savedTheme === "light" || savedTheme === "dark"
+          ? savedTheme
+          : systemPrefersLight ? "light" : "dark";
+    }());
+  </script>
   <link rel="stylesheet" href="style.css">
   <script src="./scripts.js" defer></script>
 </head>
 
 <body>
 
-  <div class="header">
-    <p style="margin-bottom:.1rem; margin-top:0; padding:0;"><mark>Hello, my name is</mark></p>
-    <h1 style="margin-top:0; margin-bottom:0;">Greg Emmen</h1>
-  </div>
-
-  <div class="content">
-
-    <div class="tab">
-      <button class="tablinks" onclick="openSection(event, 'about_me')" id="tab1" style="border-top-left-radius:10px; border-left: 1px solid var(--border-color);"><mark class="marktab">about me</mark></button>
-      <button class="tablinks" onclick="openSection(event, 'projects')" id="tab2"><mark class="marktab">portfolio</mark></button>
-      <button class="tablinks" onclick="openSection(event, 'bonus')" id="tab3" style="border-top-right-radius: 10px; border-right: 1px solid var(--border-color);"><mark class="marktab">bonus</mark></button>
-    </div>
-
-    <div id="about_me" class="tabcontent">
+  <div class="page-layout">
+    <main class="content">
+    <section id="about_me" class="portfolio-section">
+      <h2 class="section-heading">Background</h2>
       <div class="about_me">
         <img src="./assets/img/ProfilePic.jpg" alt="Greg Emmen - Profile Pic" style="width:200px;height:200px;" rel="preload">
         <p style="margin-top:0;">
@@ -46,19 +47,20 @@
         </div>
         <div class="skill">
           <h2>Skills Snapshot</h2>
-          <p><mark>MATLAB/Simulink</mark> <mark>C++</mark> <mark>Python</mark></p>
-          <p><mark>Jupyter Notebook</mark> <mark>Fusion 360</mark></p>
-          <p><mark>Agile Development</mark> <mark>GIT & GitHub</mark></p>
-          <p><mark>Communication</mark> <mark>Collaboration</mark></p>
-          <p><mark>Problem-Solving</mark> <mark>Creativity</mark></p>
+          <p>
+            <mark>MATLAB/Simulink</mark> <mark>C++</mark> <mark>Python</mark> 
+            <mark>Jupyter Notebook</mark> <mark>Fusion 360</mark>
+            <mark>Agile Development</mark> <mark>GIT & GitHub</mark>
+            <mark>Communication</mark> <mark>Collaboration</mark>
+            <mark>Problem-Solving</mark> <mark>Creativity</mark>
+          </p>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div id="projects" class="tabcontent">
+    <section id="projects" class="portfolio-section">
 
-      <h2 style="text-align:center; margin-bottom:0;">Portfolio Projects</h2>
-      <p style="text-align:center; margin-top:0;"><mark class="markSkill">Jupyter Notebook</mark> <mark class="markSkill">Python</mark> <mark class="markSkill">MATLAB/Simulink</mark></p>
+      <h2 class="section-heading">Portfolio</h2>
       <p style="text-align: left;">A majority of my experience in software and controls development comes from working various positions at General Motors. Outside of work, I have completed a few projects that I can share here. These projects build on my abilities to work with MATLAB/Simulink to develop and test control models, along with some of my exploration into data science and machine learning.</p>
 
       <div class="project">
@@ -118,72 +120,57 @@
           </div>          
         </div>
       </div>
-    </div>
+    </section>
 
-    <div id="bonus" class="tabcontent">
-      <h2 style="text-align:center; margin-bottom:0;">3D Modeling & Printing</h2>
-      <p style="text-align:center; margin-top:0;"><mark class="markSkill">Fusion360</mark> <mark class="markSkill">Problem-Solving</mark> <mark class="markSkill">Creativity</mark></p>
+    <section id="bonus" class="portfolio-section">
+      <h2 class="section-heading">3D Modeling & Printing</h2>
       <p style="text-align: left;">I enjoy being able to take ideas from conception to reality, which makes 3D printing is a very rewarding hobby. I am currently running a CR6SE printer with some modifications. All of the prints shown here are modeled by myself using AutoDesk Fusion360. Check out the Printables links for more information.</p>
         
-        <div class="project">
-          <div class="portfolio_base">
-            <img src="./assets/gif/silica_container_animation.gif">
-            <div>
-              <h3 style="margin-bottom:0; padding-left:1rem;"><i>Silica Container</i></h3>
-              <p>This is a slotted cylindrical container with a matching screw cap. You can fill the container with reusable silica gel pellets, and it can passively reduce humidity wherever you need it.</p>
-              <p>
-                <mark class="markLink"><a href="https://www.printables.com/model/280575-silica-container-cylinder-w-screw-cap" target="_blank">Silica Container - Printables</a></mark>
-              </p>
-            </div>
+        <div class="model-shelf">
+          <div class="model-item">
+            <img src="./assets/gif/silica_container_animation.gif" alt="Silica Container model">
+            <mark class="markLink"><a href="https://www.printables.com/model/280575-silica-container-cylinder-w-screw-cap" target="_blank">Silica Container - Printables</a></mark>
+          </div>
+          <div class="model-item">
+            <img src="./assets/gif/bottle_holder_animation.gif" alt="Bike-Attached Bottle Cage model">
+            <mark class="markLink"><a href="https://www.printables.com/model/125191-bottle-cage-fits-750ml-camelbak" target="_blank">Bottle Cage - Printables</a></mark>
+          </div>
+          <div class="model-item">
+            <img src="./assets/gif/dice_tower_animation.gif" alt="Dice Tower model">
+            <mark class="markLink"><a href="https://www.printables.com/model/71572-simple-dice-tower" target="_blank">Dice Tower - Printables</a></mark>
+          </div>
+          <div class="model-item">
+            <img src="./assets/gif/d20_animation.gif" alt="Very Large D20 model">
+            <mark class="markLink"><a href="https://www.printables.com/model/71574-very-large-d20" target="_blank">Very Large D20 - Printables</a></mark>
           </div>
         </div>
 
-        <hr>
+    </section>
+    </main>
 
-        <div class="project">
-          <div class="portfolio_base">
-            <img src="./assets/gif/bottle_holder_animation.gif">
-            <div>
-              <h3 style="margin-bottom:0; padding-left:1rem;"><i>Bike-Attached Bottle Cage</i></h3>
-              <p>This project was to build a bottle cage designed to fit a 750ml Camelbak water bottle. It includes a channel for mounting bolt/washers and fits standard frame positioning on most bikes.</p>
-              <p>
-                <mark class="markLink"><a href="https://www.printables.com/model/125191-bottle-cage-fits-750ml-camelbak" target="_blank">Bottle Cage - Printables</a></mark>
-              </p>
-            </div>
-          </div>
+    <aside class="sidebar">
+      <div class="header">
+        <p style="margin-bottom:.1rem; margin-top:0; padding:0;"><mark>Hello, my name is</mark></p>
+        <h1 style="margin-top:0; margin-bottom:0;">Greg Emmen</h1>
+        <div class="nav-controls">
+          <nav class="section-nav" aria-label="Page sections">
+            <p><mark class="markLink"><a href="#about_me">Background &amp; Contact</a></mark></p>
+            <p><mark class="markLink"><a href="#projects">Portfolio Projects</a></mark></p>
+            <p><mark class="markLink"><a href="#bonus">3D Modeling &amp; Printing</a></mark></p>
+          </nav>
+          <button class="theme-toggle" type="button" role="switch" aria-label="Light theme" aria-checked="false">
+            <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
+            </svg>
+            <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.2 15.3A8.5 8.5 0 0 1 8.7 3.8 8.5 8.5 0 1 0 20.2 15.3Z"></path>
+            </svg>
+          </button>
         </div>
+      </div>
 
-        <hr>
-
-        <div class="project">
-          <div class="portfolio_base">
-            <img src="./assets/gif/dice_tower_animation.gif">
-            <div>
-              <h3 style="margin-bottom:0; padding-left:1rem;"><i>Dice Tower</i></h3>
-              <p>This is a functional but somewhat artistic dice tower. I experiemented with options for producing surface patterns and designed the entire setup to print without needing support.</p>
-              <p>
-                <mark class="markLink"><a href="https://www.printables.com/model/71572-simple-dice-tower" target="_blank">Dice Tower - Printables</a></mark>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <hr>
-
-        <div class="project">
-          <div class="portfolio_base">
-            <img src="./assets/gif/d20_animation.gif">
-            <div>
-              <h3 style="margin-bottom:0; padding-left:1rem;"><i>Very large D20</i></h3>
-              <p>I modeled a large d20 just for fun. It was interesting to explore the mathematical geometry of an icosahedron along the process in Fusion360 for assembling 20 identical faces.</p>
-              <p>
-                <mark class="markLink"><a href="https://www.printables.com/model/71574-very-large-d20" target="_blank">Very Large D20 - Printables</a></mark>
-              </p>
-            </div>
-          </div>
-        </div>
-
-    </div>
+    </aside>
   </div>
 
 </body>

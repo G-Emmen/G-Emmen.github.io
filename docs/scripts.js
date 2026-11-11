@@ -1,20 +1,37 @@
-function openSection(evt, sectionName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(sectionName).style.display = "block";
-  evt.currentTarget.className += " active";
-
-  sessionStorage.setItem("activeTab",sectionName)
-}
-
 document.addEventListener("DOMContentLoaded", function(){
+  var themeToggle = document.querySelector(".theme-toggle");
+  var systemThemeQuery = window.matchMedia
+    ? window.matchMedia("(prefers-color-scheme: light)")
+    : null;
+
+  function applyTheme(theme) {
+    document.documentElement.dataset.theme = theme;
+    themeToggle.setAttribute("aria-checked", String(theme === "light"));
+  }
+
+  applyTheme(document.documentElement.dataset.theme);
+
+  themeToggle.addEventListener("click", function() {
+    var theme = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+    localStorage.setItem("theme", theme);
+    applyTheme(theme);
+  });
+
+  if (systemThemeQuery) {
+    var updateSystemTheme = function(event) {
+      var savedTheme = localStorage.getItem("theme");
+      if (savedTheme !== "light" && savedTheme !== "dark") {
+        applyTheme(event.matches ? "light" : "dark");
+      }
+    };
+
+    if (systemThemeQuery.addEventListener) {
+      systemThemeQuery.addEventListener("change", updateSystemTheme);
+    } else {
+      systemThemeQuery.addListener(updateSystemTheme);
+    }
+  }
+
   var imageOverlay = document.createElement("div");
   var imageFrame = document.createElement("div");
   var enlargedImage = document.createElement("img");
@@ -44,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
   document.addEventListener("click", function(event) {
-    var image = event.target.closest("#projects .project img, #bonus .project img");
+    var image = event.target.closest("#projects .project img, #bonus .project img, #bonus .model-item img");
 
     if (image) {
       enlargedImage.src = image.src;
@@ -61,22 +78,5 @@ document.addEventListener("DOMContentLoaded", function(){
       closeImageOverlay();
     }
   });
-
-  var selectedTab = sessionStorage.getItem("activeTab");
-  if (selectedTab === "about_me") {
-    document.getElementById("tab1").click();
-  }
-
-  else if (selectedTab === "projects") {
-    document.getElementById("tab2").click();
-  }
-
-  else if (selectedTab === "bonus") {
-    document.getElementById("tab3").click();
-  }
-
-  else {
-    document.getElementById("tab1").click()
-  }
 
 });
