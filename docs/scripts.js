@@ -11,6 +11,23 @@ document.addEventListener("DOMContentLoaded", function(){
 
   applyTheme(document.documentElement.dataset.theme);
 
+  var sidebar = document.querySelector(".sidebar");
+  function updateMobileNavHeight() {
+    document.documentElement.style.setProperty(
+      "--mobile-nav-height",
+      sidebar.getBoundingClientRect().height + "px"
+    );
+  }
+
+  updateMobileNavHeight();
+  window.addEventListener("resize", updateMobileNavHeight);
+  if (window.ResizeObserver) {
+    new ResizeObserver(updateMobileNavHeight).observe(sidebar);
+  }
+  document.querySelectorAll(".section-nav a").forEach(function(link) {
+    link.addEventListener("click", updateMobileNavHeight);
+  });
+
   themeToggle.addEventListener("click", function() {
     var theme = document.documentElement.dataset.theme === "light" ? "dark" : "light";
     localStorage.setItem("theme", theme);
