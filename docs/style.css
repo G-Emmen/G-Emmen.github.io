@@ -11,9 +11,10 @@ html {
   --main-content-color: #d0d0d0;
   --highlight-color_one: #304718;
   --highlight-color_two: #21445F;
-  --highlight-color_three: #586e75;
+  --highlight-color_three: #5f2121;
   --highlight-text-color_one: #B2D69A;
   --highlight-text-color_two: #A3C7E1;
+  --highlight-text-color_three: #e1a3a3;
 }
 
 :root[data-theme="light"] {
@@ -24,10 +25,12 @@ html {
   --main-content-color: #333333;
   --highlight-color_one: #B2D69A;
   --highlight-color_two: #A3C7E1;
-  --highlight-color_three: #93a1a1;
+  --highlight-color_three: #e1a3a3;
   --highlight-text-color_one: #304718;
   --highlight-text-color_two: #21445F;
+  --highlight-text-color_three: #5f2121;
 }
+
 
 body,
 body * {
@@ -58,6 +61,7 @@ body {
 
 mark {
   background-color: var(--highlight-color_one);
+  color: var(--highlight-text-color_one);
   border-radius: 5px;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
@@ -69,7 +73,6 @@ mark {
   padding-right: .2rem;
   padding-top: 0;
   padding-bottom: 0;
-  color: var(--highlight-text-color_one);
 }
 
 p {
@@ -101,7 +104,8 @@ ul {
 
 hr {
   background-color: var(--main-fg-color);
-  border-top: 1px var(--border-color) dashed;
+  border: none;
+  border-top: 1px var(--main-content-color) dashed;
 }
 
 .markLink a:link {
@@ -138,6 +142,21 @@ hr {
 
 .markSkill {
   background-color: var(--highlight-color_one);
+  color: var(--highlight-text-color_one);
+  border-radius: 5px;
+  margin-left: 0rem;
+  margin-right: .4rem;
+  margin-top: .3rem;
+  margin-bottom: .3rem;
+  padding-left: .2rem;
+  padding-right: .2rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.markThree {
+  background-color: var(--highlight-color_three);
+  color: var(--highlight-text-color_three);
   border-radius: 5px;
   margin-left: 0rem;
   margin-right: .4rem;
@@ -264,7 +283,6 @@ hr {
 
 .skill h2 {
   padding: 1rem;
-  margin: 0;
 }
 
 .skill p {
@@ -285,7 +303,6 @@ hr {
 
 .contact h2 {
   padding: 1rem;
-  margin: 0;
 }
 
 .contact p {
@@ -402,8 +419,7 @@ body.image-overlay-open {
 
 .section-heading {
   text-align: left;
-  margin-top: 0;
-  margin-bottom: .5rem;
+  margin-top: 0.5rem;
   padding-left: 1rem;
 }
 
@@ -465,7 +481,7 @@ body.image-overlay-open {
     z-index: 5;
     margin: 0 -21px;
     padding: 0 21px;
-    border-bottom: none;
+    border-bottom: 1px solid var(--secondary-fg-color);
     background-color: var(--main-fg-color);
     box-shadow: 0px 2px 10px rgba(0, 0, 0, .2);
   }
@@ -490,15 +506,25 @@ body.image-overlay-open {
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: .25rem;
+    padding-right: 76px;
+    box-sizing: border-box;
   }
 
   .nav-controls {
+    position: relative;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     gap: .5rem;
     width: 100%;
     max-width: calc(100vw - 42px);
     box-sizing: border-box;
+  }
+
+  .theme-toggle {
+    position: absolute;
+    top: .25rem;
+    right: 0;
+    margin: 0;
   }
 
   .section-nav p {
@@ -506,40 +532,66 @@ body.image-overlay-open {
     padding: 0;
   }
 
-  .theme-toggle {
-    flex: 0 0 auto;
-    margin: .25rem 0;
+  .content .portfolio-section {
+    text-align: left;
+  }
+
+  .content p {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section-heading {
+    padding-left: 0;
   }
 
   .about_me {
     grid-template-columns: 1fr;
-    place-items: center;
+    align-items: start;
+    padding: 0;
   }
 
-  .portfolio {
-    place-items: center;
+  .about_me img {
+    justify-self: start;
   }
 
-  .contact {
-    grid-template-columns: 1fr;
-    place-items: center;
+  .content .about_me > img {
+    display: none;
   }
 
   .skillAndContact {
     grid-template-columns: 1fr;
-    place-items: center;
-    padding-left: 0rem;
-    padding-right: 0rem;
+    justify-items: start;
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  .project img {
-    margin: auto;
+  .skill,
+  .contact {
+    text-align: left;
+  }
+
+  .skill h2,
+  .contact h2 {
+    padding: 0;
   }
 
   .project {
-    display: block;
-    place-items: center;
-    gap: .5rem;
+    padding: 0;
+    text-align: left;
+  }
+
+  .project h2 {
+    text-align: left;
+  }
+
+  .project h3 {
+    padding-left: 0 !important;
+  }
+
+  .project img {
+    margin: 0 1rem .5rem 0;
   }
 
   .markLink a:link {
@@ -563,5 +615,29 @@ body.image-overlay-open {
 
   .model-shelf {
     grid-template-columns: 1fr;
+    justify-items: start;
+  }
+
+  .model-item {
+    align-items: flex-start;
+  }
+
+  .model-item img {
+    margin: 1rem 0 .5rem;
+  }
+
+  .quote {
+    text-align: left;
+    padding: 1rem 0;
+  }
+
+  .content img {
+    display: block;
+    width: 100% !important;
+    max-width: none;
+    height: auto !important;
+    max-height: none;
+    float: none;
+    margin: 0 0 .5rem;
   }
 }
