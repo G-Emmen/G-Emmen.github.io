@@ -9,6 +9,30 @@ document.addEventListener("DOMContentLoaded", function(){
     themeToggle.setAttribute("aria-checked", String(theme === "light"));
   }
 
+  function transitionTheme(theme) {
+    var root = document.documentElement;
+    var isMobile = window.matchMedia("(max-width: 800px)").matches;
+
+    if (!isMobile || !document.startViewTransition) {
+      applyTheme(theme);
+      return;
+    }
+
+    var transition = document.startViewTransition(function() {
+      root.classList.add("theme-transitioning");
+      applyTheme(theme);
+    });
+
+    transition.finished.then(
+      function() {
+        root.classList.remove("theme-transitioning");
+      },
+      function() {
+        root.classList.remove("theme-transitioning");
+      }
+    );
+  }
+
   applyTheme(document.documentElement.dataset.theme);
 
   var sidebar = document.querySelector(".sidebar");
@@ -31,14 +55,14 @@ document.addEventListener("DOMContentLoaded", function(){
   themeToggle.addEventListener("click", function() {
     var theme = document.documentElement.dataset.theme === "light" ? "dark" : "light";
     localStorage.setItem("theme", theme);
-    applyTheme(theme);
+    transitionTheme(theme);
   });
 
   if (systemThemeQuery) {
     var updateSystemTheme = function(event) {
       var savedTheme = localStorage.getItem("theme");
       if (savedTheme !== "light" && savedTheme !== "dark") {
-        applyTheme(event.matches ? "light" : "dark");
+        transitionTheme(event.matches ? "light" : "dark");
       }
     };
 

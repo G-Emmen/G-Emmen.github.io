@@ -34,6 +34,17 @@ body * {
   transition: background-color .3s ease, color .3s ease;
 }
 
+:root.theme-transitioning body,
+:root.theme-transitioning body *,
+:root.theme-transitioning .theme-toggle::before {
+  transition: none !important;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: .3s;
+}
+
 body {
   margin: auto;
   padding: 21px;
