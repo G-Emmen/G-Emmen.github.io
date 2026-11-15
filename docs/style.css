@@ -101,9 +101,7 @@ ul {
 
 hr {
   background-color: var(--main-fg-color);
-  border: none;
   border-top: 1px var(--border-color) dashed;
-
 }
 
 .markLink a:link {
@@ -403,9 +401,10 @@ body.image-overlay-open {
 }
 
 .section-heading {
-  text-align: center;
+  text-align: left;
   margin-top: 0;
   margin-bottom: .5rem;
+  padding-left: 1rem;
 }
 
 .content {
