@@ -234,7 +234,7 @@ hr {
   width: 24px;
   height: 24px;
   border-radius: 5px;
-  background-color: var(--main-bg-color);
+  background-color: var(--main-fg-color);
   content: "";
   transition: transform .3s ease, background-color .3s ease;
 }
