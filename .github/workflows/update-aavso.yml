@@ -2,7 +2,7 @@ name: Update AAVSO Data
 
 on:
   schedule:
-    - cron: '0 0 */2 * *' # Runs once every other day
+    - cron: '0 0 * * *' # Runs once every day at midnight
   workflow_dispatch:       # Allows you to trigger it manually from the Actions tab
 
 permissions:
