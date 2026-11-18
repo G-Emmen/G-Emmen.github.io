@@ -74,10 +74,20 @@
             <p style="margin-top:0.5rem;">
               Contributor to NASA’s Exoplanet Watch program, turning raw telescope images into transit light curves that refine exoplanet orbital timing. I built a locally hosted web application around the EXOTIC reduction pipeline that ingests raw MicroObservatory and checked-out .FITS data, automates star chart coordinate matching with user confirmation, and produces publication-ready light curve charts. All results are published to the AAVSO Exoplanet Database under observer code EGRA. <br> <br>
               <mark class="markThree">Stack:</mark> Python, Pandas, EXOTIC Reduction Analysis <br> <br>
-              <mark class="markThree">Result:</mark> 6 observations published to AAVSO
+              <mark class="markThree">Result:</mark> <strong><span id="output">...</span></strong> observations published to AAVSO
               <br><br><mark class="markLink"><a href="https://apps.aavso.org/exosite/?obscode=EGRA&in_notes=&star_name=&exoplanet_name=&start_date=&end_date=&results_per_page=&search=true" target="_blank">AAVSO contributions in the <i>Exoplanet Database</i>...</a></mark> <br>
             </p>
           </div>
+            <script>
+              fetch('./num_contributions.json')
+                .then(response => response.json())
+                .then(data => {
+                  document.getElementById('output').textContent = data.value;
+                })
+                .catch(() => {
+                  document.getElementById('output').textContent = 'Unavailable';
+                });
+            </script>
         </div>
       </div>
 

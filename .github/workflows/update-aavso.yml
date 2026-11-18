@@ -1,0 +1,28 @@
+name: Update AAVSO Data
+
+on:
+  schedule:
+    - cron: '0 0 */2 * *' # Runs once every other day
+  workflow_dispatch:       # Allows you to trigger it manually from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install beautifulsoup4
+      - run: python fetch_aavso.py
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@://github.com"
+          git add docs/aavso_data.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update AAVSO observer data"
+          git push
+
